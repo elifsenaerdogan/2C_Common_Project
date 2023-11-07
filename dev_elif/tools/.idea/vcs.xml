@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apps/dc-mfe-help-tools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apps/dc-mfe-homepage" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apps/dc-mfe-myaccount" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apps/dc-mfe-shell" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apps/dc-mfe-tl-topup" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libs/dc-mfe-ui" vcs="Git" />
+  </component>
+</project>

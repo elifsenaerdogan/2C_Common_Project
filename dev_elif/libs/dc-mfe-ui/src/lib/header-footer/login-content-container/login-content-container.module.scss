@@ -1,0 +1,141 @@
+@import '@others/assets/styles/variables.scss';
+.trkclAppLoginContainer {
+  box-sizing: border-box;
+  width: 75rem;
+  margin: 0 auto;
+  padding: 0rem 0 1.5rem 0;
+  color: white;
+  letter-spacing: 0.5px;
+  @media (max-width: 768px) {
+    width: auto;
+    padding: 0;
+  }
+
+  .trkclAppLoginContainerLeft {
+    margin-top: 3.75rem;
+    padding: 0 10px;
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: column;
+
+    & .trkclAppLoginContainerLeftImg {
+      width: 348px;
+      height: 204px;
+    }
+
+    & .trkclAppLoginContainerLeftDescWrapper {
+      margin: 0 -0.625rem;
+    }
+
+    & .trkclAppLoginContainerLeftDesc {
+      padding: 0 0.625rem;
+
+      & .trkclAppLoginContainerLeftDescTitle {
+        margin: 0;
+        margin-top: 0.5rem;
+        font-weight: 700;
+      }
+      & .trkclAppLoginContainerLeftDescText {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .trkclAppLoginContainerRight {
+    margin-top: 1.25rem;
+    padding: 0px 0.625rem;
+    letter-spacing: 0.5px;
+
+    @media (max-width: 768px) {
+      padding: 1rem 1rem 0;
+    }
+    & .trkclAppLoginContainerRightTitle {
+      margin: 0;
+      font-weight: 700;
+      line-height: 1.5;
+      letter-spacing: 0.5px;
+
+      @media (max-width: 768px) {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+    }
+
+    & .trkclAppLoginContainerRightDesc {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      & .trkclAppLoginContainerRightDescText {
+        margin: 0;
+      }
+      & .trkclAppLoginContainerRightDescError {
+        color: $color-punch;
+        margin: 0;
+        margin-top: 0.625rem;
+      }
+      & .trkclAppLoginContainerRightDescBtn {
+        margin-bottom: 1rem;
+      }
+      & .trkclAppLoginContainerRightDescDivider {
+        margin: 0;
+        border-top: 1px solid $white-25;
+      }
+      & .trkclAppLoginContainerRightDescNavigate {
+        color: $secondary;
+        padding-top: 1rem;
+        align-self: flex-end;
+      }
+
+      //new
+
+      & .trkclAppLoginContainerRightContent {
+        display: flex;
+        margin-top: 2.125rem;
+        align-items: center;
+
+        & .trkclAppLoginContainerRightContentQr {
+          width: 30%;
+          & img {
+            width: 125px;
+            height: 123px;
+          }
+        }
+
+        & .trkclAppLoginContainerRightContentDesc {
+          display: flex;
+          flex-direction: column;
+          width: 70%;
+          line-height: 1.29;
+          @media (max-width: 768px) {
+            width: 60%;
+          }
+          & .trkclAppLoginContainerRightContentDescDow {
+            line-height: 1.25 !important;
+            margin-bottom: 12px;
+          }
+        }
+      }
+
+      & .trkclAppLoginContainerLoginBtn {
+        padding: 0.75rem 0;
+      }
+
+      & .trkclAppLoginContainerRightOrDivider {
+        width: 100%;
+        color: $white !important;
+        & span {
+          color: $white !important;
+        }
+
+        &::after {
+          border-top: 1px solid $white-25;
+        }
+      }
+    }
+  }
+
+  .trkclAppHidden {
+    display: none;
+  }
+}

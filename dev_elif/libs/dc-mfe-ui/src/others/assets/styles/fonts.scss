@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'GreycliffCF Bold';
+  src: url('../fonts/GreycliffCF-Bold.woff2') format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'GreycliffCF Medium';
+  src: url('../fonts/GreycliffCF-Medium.woff2') format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'GreycliffCF Normal';
+  src: url('../fonts/GreycliffCF-Regular.woff2') format('woff');
+  font-weight: normal;
+}
+
+.text-legal-regular {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  line-height: 1.45;
+  font-family: 'GreycliffCF Normal', Helvetica, sans-serif;
+}
+.text-captions-regular {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.33;
+  font-family: 'GreycliffCF Normal', Helvetica, sans-serif;
+}
+
+.text-body-small {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.43;
+  font-family: 'GreycliffCF Normal', Helvetica, sans-serif;
+}
+
+.text-body-regular {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: 'GreycliffCF Normal', Helvetica, sans-serif;
+}
+.text-body-large-regular {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.56;
+  font-family: 'GreycliffCF Normal', Helvetica, sans-serif;
+}
+
+.text-head-regular-xs {
+  font-size: 1.3125rem;
+  font-weight: 500;
+  line-height: 1.33;
+  font-family: 'GreycliffCF Normal', Helvetica, sans-serif;
+}
+
+.text-head-regular-s {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.33;
+  font-family: 'GreycliffCF Normal', Helvetica, sans-serif;
+}
+
+.text-head-regular-m {
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 1.29;
+  font-family: 'GreycliffCF Normal', Helvetica, sans-serif;
+}
+
+.text-head-regular-l {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  font-family: 'GreycliffCF Normal', Helvetica, sans-serif;
+}
+
+.text-head-regular-xl {
+  font-size: 2.625rem;
+  font-weight: 300;
+  line-height: 1.33;
+  font-family: 'GreycliffCF Normal', Helvetica, sans-serif;
+}
+.text-head-regular-2xl {
+  font-size: 3.125rem;
+  font-weight: 300;
+  line-height: 1.28;
+  font-family: 'GreycliffCF Normal', Helvetica, sans-serif;
+}
+
+.text-legal-bold {
+  font-size: 0.6875rem;
+  font-weight: bold;
+  line-height: 1.45;
+  font-family: 'GreycliffCF Bold', Helvetica, sans-serif;
+}
+.text-captions-bold {
+  font-size: 0.75rem;
+  font-weight: bold;
+  line-height: 1.33;
+  font-family: 'GreycliffCF Bold', Helvetica, sans-serif;
+}
+.text-body-small-bold {
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.43;
+  font-family: 'GreycliffCF Bold', Helvetica, sans-serif;
+}
+.text-body-bold {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  font-family: 'GreycliffCF Bold', Helvetica, sans-serif;
+}
+.text-body-large-bold {
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1.56;
+  font-family: 'GreycliffCF Bold', Helvetica, sans-serif;
+}
+.text-head-bold-xs {
+  font-size: 1.3125rem;
+  font-weight: bold;
+  line-height: 1.33;
+  font-family: 'GreycliffCF Bold', Helvetica, sans-serif;
+}
+.text-head-bold-s {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.33;
+  font-family: 'GreycliffCF Bold', Helvetica, sans-serif;
+}
+.text-head-bold-m {
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: 1.29;
+  font-family: 'GreycliffCF Bold', Helvetica, sans-serif;
+}
+.text-head-bold-l {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: -0.57px;
+  font-family: 'GreycliffCF Bold', Helvetica, sans-serif;
+}
+.text-head-bold-xl {
+  font-size: 2.625rem;
+  font-weight: bold;
+  line-height: 1.33;
+  font-family: 'GreycliffCF Bold', Helvetica, sans-serif;
+}
+
+.text-head-bold-2xl {
+  font-size: 3.125rem;
+  font-weight: bold;
+  line-height: 1.28;
+  letter-spacing: -0.78px;
+  font-family: 'GreycliffCF Bold', Helvetica, sans-serif;
+}

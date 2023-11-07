@@ -1,0 +1,72 @@
+@import '@others/assets/styles/variables.scss';
+.trkclAppTagWrapper {
+  & .trkclAppTag {
+    -webkit-transition: background-color 0.3s, -webkit-box-shadow 0.3s;
+    transition: background-color 0.3s, -webkit-box-shadow 0.3s;
+    -o-transition: background-color 0.3s, box-shadow 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+    border: 0;
+    outline: 0;
+    padding: 0 1rem;
+    letter-spacing: 0.5px;
+    border-radius: 2rem;
+    min-width: auto;
+    line-height: 2rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  & .trkcl_primary {
+    background-color: $primary-300;
+    color: $white;
+
+    &:hover {
+      background-color: $primary-400;
+    }
+    &:active {
+      background-color: $primary-200;
+    }
+    &.disabled {
+      background-color: $lines;
+      color: $bluey-grey;
+      pointer-events: none;
+    }
+  }
+  & .trkcl_secondary {
+    background-color: $secondary;
+    color: $dark;
+
+    &:hover {
+      background-color: $secondary-300;
+    }
+    &:active {
+      background-color: $secondary-200;
+    }
+    &.disabled {
+      background-color: $lines;
+      color: $bluey-grey;
+      pointer-events: none;
+    }
+  }
+  & .trkcl_default {
+  }
+
+  & .trkcl_alternative {
+    background-color: $white;
+    border: solid 1px $dark;
+    color: $dark;
+    &:hover {
+      background-color: $shade;
+    }
+    &:active {
+      background-color: $lines;
+    }
+    &.disabled {
+      border: 1px solid $bluey-grey;
+      color: $bluey-grey;
+      pointer-events: none;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkclAppSecondPage {
+  padding: 0 1rem;
+
+  &__header {
+    display: inline-flex;
+    cursor: pointer;
+    margin-bottom: 1.75rem;
+    &--btn {
+      margin-left: 0.5rem;
+    }
+  }
+
+  &__divider {
+    color: $lines;
+    margin: 0 !important;
+  }
+
+  &__items {
+    &--item {
+      &-link {
+        display: inline-block;
+        margin: 0.875rem 0 0.9375rem 0.5rem;
+        cursor: pointer;
+        text-decoration: none;
+        color: $dark;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import '@others/assets/styles/variables.scss';
+
+.m-trkclAppPayment {
+    width: 100%;
+    padding-top: 1.25rem;
+
+    &__Row {
+        margin-bottom: .5rem;
+    }
+
+     &__Popover--Content {
+        max-width: 12.125rem;
+    }
+
+    &__BottomColumns {
+     margin-top: 1.25rem;  
+    }
+
+    &__AggrementText{
+        color: $slate-grey;
+        &--Link{
+            color: $primary-100 !important;
+            cursor: pointer;
+        } 
+    }
+}

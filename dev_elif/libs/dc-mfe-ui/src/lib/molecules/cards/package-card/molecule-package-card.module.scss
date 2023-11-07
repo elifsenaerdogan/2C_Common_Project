@@ -1,0 +1,231 @@
+@import '../../../../others/assets/styles/variables.scss';
+.m-trkclApp-packageCard {
+  width: 100%;
+  height: 100%;
+  border: none !important;
+  cursor: pointer;
+  box-shadow: 0 0.125rem 0.75rem -0.3125rem $dark !important;
+
+  &__desktop {
+    height: 100%;
+    border-radius: 0.625rem;
+    background-color: $white;
+    position: relative;
+
+    &--headBackground {
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 560px !important;
+      height: 87px;
+      border-top-left-radius: 0.625rem;
+      border-top-right-radius: 0.625rem;
+      overflow: hidden;
+      left: -50%;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      z-index: 1;
+
+      &-personalGradiant {
+        position: absolute;
+        top: 0;
+        left: 25%;
+        height: 87px;
+        width: 280px;
+        background: #009ed8
+          radial-gradient(
+            circle at -2.5rem 0,
+            #00b3e3 40%,
+            rgba(0, 179, 227, 0.75) 40%,
+            rgba(0, 179, 227, 0.75) 60%,
+            rgba(0, 179, 227, 0.5) 60%,
+            rgba(0, 179, 227, 0.5) 85%,
+            rgba(0, 0, 0, 0) 85%
+          );
+        z-index: 2;
+      }
+      &-abroadGradiant {
+        position: absolute;
+        top: 0;
+        left: 25%;
+        height: 87px;
+        width: 280px;
+        background: rgb(36, 75, 177) //fix
+          radial-gradient(
+            circle at 40px 0,
+            rgb(39, 53, 111) 40%,
+            rgba(39, 53, 111, 0.75) 40%,
+            rgba(39, 53, 111, 0.75) 60%,
+            rgba(39, 53, 111, 0.5) 60%,
+            rgba(39, 53, 111, 0.5) 85%,
+            rgba(0, 0, 0, 0) 85%
+          );
+        z-index: 2;
+      }
+    }
+
+    &--content {
+      position: relative;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+
+      &-desc {
+        display: flex;
+        padding-left: 1rem;
+        margin-top: 2rem; //düzenle
+
+        & > div {
+          display: flex;
+          flex-direction: column;
+          margin-right: 1.5rem;
+        }
+        :last-child {
+          margin-right: 0;
+        }
+
+        &-type {
+          line-height: 1.33;
+          color: $grey-secondary;
+        }
+
+        &-detail {
+          color: $dark;
+          & > span {
+            vertical-align: text-top;
+            margin-left: 0.125rem;
+            color: $dark;
+          }
+        }
+      }
+
+      &-title {
+        padding: 1rem;
+        color: $white;
+        line-height: 1.33;
+      }
+      &-images {
+        padding: 0 1rem;
+        display: flex;
+        &-image {
+          padding-right: 8px;
+        }
+      }
+      &-footer {
+        border-top: 1px solid $shade;
+        padding: 1rem;
+        color: $slate-grey;
+
+        &-type {
+          vertical-align: super;
+          margin-top: 0.3125rem;
+          margin-left: 0.125rem;
+        }
+      }
+    }
+  }
+
+  :global(.ant-card-body) {
+    padding: 0 !important;
+    height: 100% !important;
+  }
+}
+
+.m-trkclApp-packageCardMobile {
+  width: 100%;
+  height: 100%;
+  border: none !important;
+  border-radius: 0.625rem;
+  cursor: pointer;
+
+  &__mobileContent {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &--title {
+      margin-top: 0.375rem;
+      font-size: 18px; //sil
+      font-weight: bold; //sil
+      display: flex;
+      color: $black;
+      padding: 1rem 1rem 0 1rem;
+    }
+
+    &--desc {
+      padding-right: 1rem;
+
+      text-align: right;
+      & > span {
+        color: $dark;
+        font-weight: bold;
+      }
+      &-type {
+        color: $grey-secondary;
+        font-weight: normal;
+      }
+    }
+
+    &--footer {
+      border-top: 0.0625rem solid $shade;
+      padding: 0.25rem 0.975rem 0.625rem 0.975rem;
+      margin-top: 0.625rem;
+
+      & > span {
+        font-size: 20px; //sil
+        font-weight: bold; //sil
+        color: $slate-grey;
+      }
+
+      &-count {
+        font-size: 11px; //sil
+        vertical-align: super;
+      }
+    }
+  }
+  &__headBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $dark;
+    height: 0.625rem;
+    width: 100%;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+  }
+
+  :global(.ant-card-body) {
+    padding: 0 !important;
+    height: 100% !important;
+  }
+}
+.desktopShadow {
+  box-shadow: 0 2px 12px -5px rgba(37, 51, 66, 0.5);
+
+  &:hover {
+    box-shadow: 0 0.5rem 0.625rem -3px rgba(0, 0, 0, 0.1),
+      0 0.375rem 1.875rem 0.3125rem rgba(0, 0, 0, 0.1),
+      0 1rem 1.5rem 2px rgba(0, 0, 0, 0.1);
+  }
+}
+.mobileShadow {
+  box-shadow: 0 0 0.125rem 0 $dark,
+    0 0.1875rem 0.0625rem -0.125rem $dark-alternative,
+    0 0.125rem 0.125rem 0 $dark-alternative;
+  &:hover {
+    box-shadow: 0 0.5rem 0.625rem -3px rgba(0, 0, 0, 0.1),
+      0 0.375rem 1.875rem 0.3125rem rgba(0, 0, 0, 0.1),
+      0 1rem 1.5rem 2px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.storybookClasses {
+  width: 17.5rem !important;
+  height: 23rem !important;
+  @media (max-width: 768px) {
+    width: 20rem !important;
+    height: 9.375rem !important;
+  }
+}

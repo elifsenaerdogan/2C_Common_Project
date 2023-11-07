@@ -1,0 +1,70 @@
+@import '@others/assets/styles/variables.scss';
+
+.m-trkclAppQuickTransactions{
+  position: relative;
+  margin: -1.25rem 0;
+  padding: 1.25rem 0;
+  z-index: 99999;
+  &__title {
+    line-height: 1rem;
+    color: $bluey-grey;
+  }
+
+  &__leftShadow{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -0.313rem;
+    width: 0.313rem;
+    height: 100%;
+    box-shadow: 6px 0 16px -2.5px   rgba(0, 0, 0, 0.1) inset;
+    background-color: #f1f4f5;
+    border-bottom-right-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    min-width: 17.5rem;
+  }
+
+  &__populars{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.625rem;
+    margin: 1rem 0;
+
+  }
+
+
+  &__bottomText {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: $bluey-grey;
+    margin: 0.5rem 0 0.75rem 0;
+  }
+
+  &__link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $dark;
+    text-decoration: none;
+    position: relative;
+    margin: 0 -1.25rem;
+    padding: 0.75rem 1.25rem;
+
+    svg {
+      transform: rotate(180deg);
+    }
+
+  }
+
+  &__divider{
+    height: 1px;
+    background-color: $lines;
+    border-radius: 0.5rem;
+    margin: 0 -1.25rem;
+    @media screen and (max-width: 768px){
+      margin: 0;
+
+    }
+  }
+
+}

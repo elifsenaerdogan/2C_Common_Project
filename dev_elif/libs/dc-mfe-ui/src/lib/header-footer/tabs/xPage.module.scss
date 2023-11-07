@@ -1,0 +1,73 @@
+@import '@others/assets/styles/variables.scss';
+
+.tabsWrapper {
+  width: 1440px;
+  margin: 0 auto;
+  :global(.slick-list) {
+    margin: 0 2.1875rem;
+  }
+}
+
+.tabsContentWrapper {
+  background-color: red;
+}
+
+.trkclAppXPagePrevArrow,
+.trkclAppXPageNextArrow {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  color: $header-color !important;
+  background-color: #f7f9fa !important;
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  top: 40% !important;
+  z-index: 2;
+  &:hover {
+    background-color: $shade !important;
+  }
+  &:global(.slick-disabled) {
+    background-color: #fcfdfd !important;
+    color: #a9bbde !important;
+    cursor: default;
+  }
+}
+.trkclAppXPagePrevArrow {
+  inset-inline-start: 0px !important;
+}
+
+.trkclAppXPageNextArrow {
+  inset-inline-end: 0px !important;
+}
+
+.trkclAppTabItem {
+  margin-right: 0.625rem;
+  color: $bluey-grey;
+  line-height: 1.33;
+  min-height: 3.125rem;
+  padding: 1.25rem 0px;
+  border-bottom: 3px solid transparent;
+  display: flex !important;
+  align-items: center;
+  font-weight: 500;
+  justify-content: center;
+  text-align: center;
+
+  &.active {
+    color: $header-color;
+    border-bottom-color: $header-color;
+    font-weight: 700;
+    font-family: 'GreycliffCF Bold', Helvetica, sans-serif;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .tabsWrapper {
+    width: auto !important;
+  }
+  :global(.slick-list) {
+    margin: 0 !important;
+  }
+}

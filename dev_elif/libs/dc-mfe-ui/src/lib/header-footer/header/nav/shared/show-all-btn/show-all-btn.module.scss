@@ -1,0 +1,14 @@
+@import '@others/assets/styles/variables.scss';
+
+.showAll {
+  color: $dark;
+  display: flex;
+  align-items: flex-end;
+  &__title {
+    margin-right: 0.5rem;
+  }
+  &__icon {
+    height: 1.25rem;
+    transform: rotateZ(180deg);
+  }
+}

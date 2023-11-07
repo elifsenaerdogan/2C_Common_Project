@@ -1,0 +1,105 @@
+{
+  "name": "dc-mfe-shell",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/dc-mfe-shell",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "root": "apps/dc-mfe-shell",
+        "outputPath": "dist/apps/dc-mfe-shell"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/dc-mfe-shell"
+        },
+        "production": {}
+      },
+      "dependsOn": ["build-custom-server"]
+    },
+    "serve": {
+      "executor": "@nrwl/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "dc-mfe-shell:build",
+        "dev": true,
+        "port": 6200,
+        "customServerTarget": "dc-mfe-shell:serve-custom-server"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "dc-mfe-shell:build:development",
+          "dev": true,
+          "customServerTarget": "dc-mfe-shell:serve-custom-server:development"
+        },
+        "production": {
+          "buildTarget": "dc-mfe-shell:build:production",
+          "dev": false,
+          "customServerTarget": "dc-mfe-shell:serve-custom-server:production"
+        }
+      }
+    },
+    "export": {
+      "executor": "@nrwl/next:export",
+      "options": {
+        "buildTarget": "dc-mfe-shell:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/dc-mfe-shell/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/dc-mfe-shell/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "build-custom-server": {
+      "executor": "@nrwl/js:tsc",
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/dc-mfe-shell",
+        "main": "apps/dc-mfe-shell/server/main.ts",
+        "tsConfig": "apps/dc-mfe-shell/tsconfig.server.json",
+        "clean": false,
+       
+        "styles": ["libs/dc-mfe-ui/src/others/assets/styles/global.scss"]
+      },
+      "configurations": {
+        "development": {},
+        "production": {}
+      }
+    },
+    "serve-custom-server": {
+      "executor": "@nrwl/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "dc-mfe-shell:build-custom-server"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "dc-mfe-shell:build-custom-server:development"
+        },
+        "production": {
+          "buildTarget": "dc-mfe-shell:build-custom-server:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}

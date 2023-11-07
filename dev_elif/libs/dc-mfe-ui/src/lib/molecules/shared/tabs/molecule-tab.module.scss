@@ -1,0 +1,64 @@
+@import '@others/assets/styles/variables.scss';
+.m-trkclAppTab {
+  :global(.slick-track) {
+    display: flex;
+    align-items: center;
+  }
+}
+.m-tabItem {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  color: $slate-grey;
+  text-align: center;
+  gap: 0.625rem;
+  min-height: 1.5rem;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    svg {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+  &__active {
+    color: $primary-100;
+
+    & + .m-tabItem__divider {
+      border-block-start-color: $primary-100;
+    }
+  }
+  &__divider {
+    margin: 0;
+    margin-top: 0.75rem;
+    border-radius: 0.635rem;
+    border-block-start: 3px solid transparent;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.m-tabItemsDataWrapper {
+  border-bottom: 1px solid $lines;
+}
+
+/* storybook classes */
+.storybook__tab {
+  width: 1000px;
+}
+
+.storybook__tabsContentWrapper {
+  background-color: red;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 992px) {
+  .storybook__tab {
+    width: auto !important;
+    :global(.slick-list) {
+      margin: 0 !important;
+    }
+  }
+}

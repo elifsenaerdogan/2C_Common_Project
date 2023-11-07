@@ -1,0 +1,88 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkclAppSearchDropDownInputWrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  & .trkclAppSearchDropDownInputSubInfo {
+    line-height: 1;
+    letter-spacing: -0.1px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    font-size: 0.6875rem;
+    text-align: right;
+    font-weight: 500;
+    opacity: 0.4;
+    color: $white;
+    right: 0;
+    bottom: -17px;
+  }
+
+  & .trkclAppSearchDropDownInput {
+    height: 60px;
+    padding: 1.125rem 1.5rem;
+    border-radius: 0.5rem;
+    color: $dark;
+    line-height: 1;
+    box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.1),
+      0 6px 30px 5px rgba(0, 0, 0, 0.1), 0 16px 24px 2px rgba(0, 0, 0, 0.1);
+    border: none;
+    & .trkclAppSearchDropDownInputActions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    & > input {
+      color: $dark;
+      &::placeholder {
+        color: $slate-grey;
+      }
+    }
+
+    &:hover {
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+.trkclAppDropDownPopupClass {
+  padding: 0;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.1),
+    0 6px 30px 5px rgba(0, 0, 0, 0.1), 0 16px 24px 2px rgba(0, 0, 0, 0.15);
+
+  & .trkclAppDropDownSubSection {
+    font-weight: 600;
+    padding: 0.625rem 1.25rem;
+    color: $primary-100;
+    cursor: pointer;
+    &:hover {
+      background-color: $pale-grey-30;
+    }
+  }
+  :local(div) {
+    :global(.rc-virtual-list) {
+      :global(.rc-virtual-list-holder) {
+        & > div {
+          :global(.rc-virtual-list-holder-inner) {
+            :global(.ant-select-item) {
+              padding: 0.625rem 1.25rem;
+              background-color: #fff;
+              border-bottom: 1px solid $dark-20;
+              &:hover {
+                background-color: $pale-grey-30;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.trkclAppSearchDropDownIcon {
+  color: $slate-grey;
+}

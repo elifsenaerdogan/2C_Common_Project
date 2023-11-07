@@ -1,0 +1,142 @@
+// @import '@others/assets/styles/variables.scss';
+@import '../../../others/assets/styles/variables.scss';
+
+@mixin radioButtonCircle {
+  & :global(.ant-radio) {
+    div:first-child {
+      display: none;
+    }
+
+    & span:global(.ant-radio-inner) {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-color: $bluey-grey;
+      transition: none;
+
+      &::after {
+        transition: none;
+      }
+    }
+  }
+  & :global(.ant-radio-checked) {
+    & div {
+      display: none;
+    }
+    &::after {
+      border: none;
+    }
+
+    & span:global(.ant-radio-inner) {
+      background-color: $white;
+      &::after {
+        transform: scale(1);
+        background-color: $secondary;
+        transition: none;
+        width: 0.875rem;
+        height: 0.875rem;
+        margin-block-start: -0.4375rem;
+        margin-inline-start: -0.4375rem;
+        border: none;
+      }
+    }
+  }
+}
+@mixin setRadioButtonNamePadding($inlinePaddingStart: 0) {
+  &:global(.ant-radio-wrapper) > span:last-child {
+    padding-inline-end: 0;
+    padding-inline-start: $inlinePaddingStart;
+  }
+}
+.a-trkclAppRadioButtonCartType {
+  position: relative;
+  overflow: hidden;
+  margin-inline-end: 0;
+  border-radius: 10px;
+
+  @include radioButtonCircle;
+  @include setRadioButtonNamePadding();
+
+  & :global(.ant-radio) {
+    position: absolute;
+    z-index: 2;
+    display: none;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  &__checked {
+    outline: 2px solid $secondary;
+    & :global(.ant-radio) {
+      display: block;
+    }
+  }
+
+  &__circle {
+    z-index: 1;
+    border-radius: 50%;
+    position: absolute;
+    height: 6rem;
+    width: 6rem;
+    background-color: $secondary;
+  }
+
+  &__top-right {
+    & :global(.ant-radio) {
+      top: 0.3125rem;
+      right: 0.3125rem;
+      display: block;
+    }
+    & .a-trkclAppRadioButtonCartType__circle {
+      top: -3rem;
+      right: -3rem;
+    }
+  }
+
+  &__top-left {
+    & :global(.ant-radio) {
+      top: 0.3125rem;
+      left: 0.3125rem;
+      display: block;
+    }
+    & .a-trkclAppRadioButtonCartType__circle {
+      top: -3rem;
+      left: -3rem;
+    }
+  }
+
+  &__bottom-right {
+    & :global(.ant-radio) {
+      bottom: 0.3125rem;
+      right: 0.3125rem;
+      display: block;
+    }
+    & .a-trkclAppRadioButtonCartType__circle {
+      bottom: -3rem;
+      right: -3rem;
+    }
+  }
+
+  &__bottom-left {
+    & :global(.ant-radio) {
+      bottom: 0.3125rem;
+      left: 0.3125rem;
+      display: block;
+    }
+    & .a-trkclAppRadioButtonCartType__circle {
+      bottom: -3rem;
+      left: -3rem;
+    }
+  }
+}
+
+/* storybook classes */
+.storybook__card {
+  width: 200px;
+  height: 350px;
+  background-color: navajowhite;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 10px;
+}

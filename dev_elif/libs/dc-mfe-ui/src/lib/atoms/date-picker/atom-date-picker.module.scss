@@ -1,0 +1,47 @@
+@import '@others/assets/styles/variables.scss';
+
+.a-trkclAppDatePickerWrapper {
+
+  width: 100%;
+  height: 56px !important;
+
+  &__input {
+    box-shadow: none;
+    width: 100%;
+    height: 56px !important;
+
+    @media (max-width: 768px) {
+      width: 95%;
+    }
+
+    &--withLabel {
+      padding: 1.375rem 2.75rem 0.625rem 1rem;
+    }
+  }
+}
+
+
+.a-trkclAppDatePickerLabel {
+  position: absolute;
+  pointer-events: none;
+  left: 1rem;
+  top: 1.1rem;
+  font-size: 1rem;
+  color: $slate-grey;
+  z-index: 1;
+  transition: 0.2s ease all;
+
+  &__float {
+    position: absolute;
+    top: 0.563rem;
+    left: 1rem;
+    font-size: 0.8rem;
+    color: $bluey-grey;
+    z-index: 1;
+    transition: 0.2s ease all;
+  }
+}
+
+
+
+

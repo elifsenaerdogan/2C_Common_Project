@@ -1,0 +1,78 @@
+@import '@others/assets/styles/variables.scss';
+.m-trkclAppModal {
+  &__header {
+    margin-bottom: 1.25rem;
+    height: 6rem;
+    &--icon {
+      &-error {
+        svg {
+          g {
+            circle {
+              fill: $modal-error;
+            }
+          }
+        }
+      }
+      &-success {
+        svg {
+          g {
+            ellipse {
+              fill: $modal-success;
+            }
+          }
+        }
+      }
+      &-info {
+        svg {
+          g {
+            circle {
+              fill: $modal-info;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__bodyTitle {
+    line-height: 1.33;
+    margin-bottom: 0.25rem;
+    &--error {
+      color: $modal-error;
+    }
+    &--success {
+      color: $modal-success;
+    }
+    &--info {
+      color: $modal-info;
+    }
+  }
+  &__bodyText {
+    line-height: 1.67;
+    color: $dark;
+    margin-bottom: 2.1875rem;
+  }
+
+  &__content {
+    :global(.ant-modal-content) {
+      padding: 3rem 2.5rem;
+      text-align: center;
+    }
+  }
+  &__button {
+    padding: 0.5rem 1.25rem !important;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  .m-trkclAppModal {
+    &__content {
+      :global(.ant-modal-content) {
+        padding: 4rem 0.5rem 3rem 0.5rem;
+      }
+    }
+    &__header {
+      height: 5rem;
+    }
+  }
+}

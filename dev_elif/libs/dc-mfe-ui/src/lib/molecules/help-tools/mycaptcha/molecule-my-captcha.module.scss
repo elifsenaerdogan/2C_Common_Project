@@ -1,0 +1,92 @@
+@import '@others/assets/styles/variables.scss';
+
+.a-trkclAppCaptchaWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:3%;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+
+
+  }
+
+  &__captchaContainer {
+    display: flex;
+    border-radius: 0.5rem;
+    border: 1px solid $lines;
+    width: 100%;
+    height: 3.5rem;
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+      width: 95%;
+    }
+
+    &--captcha {
+      flex: 1;
+      border-right: 1px solid $lines;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 12.5rem;
+      }
+    }
+
+    &--captchaIcon {
+      align-self: center;
+      font-size: 1.5rem;
+      padding: 0 1rem;
+      color: $grey-40;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &-rotate {
+        animation: rotate270 1s ease 0s infinite;
+      }
+    }
+  }
+  &__captchaControl {
+    display: flex;
+
+    &--captchaInput {
+      width:100%;
+
+
+      @media (max-width: 768px) {
+        width: 95%;
+        margin-top: 10px;
+      }
+
+    }
+
+  }
+}
+
+@keyframes rotate270 {
+  0% {
+    opacity: 1;
+    transform: rotate(0);
+    transform-origin: center;
+  }
+  100% {
+    transform: rotate(200deg);
+    opacity: 0;
+    transform-origin: center;
+  }
+}
+
+.a-trkclAppCaptchaLeft{
+  display: flex;
+  flex-direction: column;
+}
+
+.p3{
+  font-size: 0.6rem;
+  font-family: 'GreycliffCF Medium', sans-serif;
+}

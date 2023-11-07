@@ -1,0 +1,18 @@
+@import '@others/assets/styles/variables.scss';
+
+.m-priceboxContainer {
+  width: auto;
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+  &__title {
+    color: $dark;
+    margin-bottom: 1rem;
+  }
+
+  &__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

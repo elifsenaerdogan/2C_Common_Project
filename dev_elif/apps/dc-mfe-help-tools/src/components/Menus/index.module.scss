@@ -1,0 +1,156 @@
+@import '@others/assets/styles/variables.scss';
+
+
+html.font-size {
+  font-size: 16px;
+}
+
+.Rectangle{
+  display: flex;
+  flex-direction: column;
+}
+
+.Rectangle1 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 5%;
+  margin-top: 8%;
+  width: 100%;
+  min-height: 91px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px -4px $dark-20;
+  border: solid 1px #dce1e6;
+  background-image: linear-gradient(108deg,$primary-100 0%, $primary-200 100%);
+}
+
+.Rectangle2{
+  display: grid;
+  width:100%;
+  margin-top: 8%;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px -4px rgba(37, 51, 66, 0.2);
+  border: solid 1px #dce1e6;
+  background-color:$grey-alternative;
+  margin-bottom: 20%;
+  min-height:259px;
+}
+
+
+.icon {
+  color:$white;
+}
+
+.icon2{
+  min-width: 24px;
+  height: auto;
+}
+
+.imageya{
+  margin-left: 1.2rem;
+  min-width: 36px;
+  height:auto;
+  color: $white;
+}
+
+
+.p{
+  font-size: 1.3125em;
+  font-family: GreycliffCF,sans-serif;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  color:$white;
+  margin-left: 3%;
+}
+
+.p2{
+  margin-left: 4%;
+  font-size: 1em;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: $dark;
+  font-family: GreycliffCF,sans-serif;
+}
+
+.div1{
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  text-decoration: none;
+}
+
+.div1:hover .icon2,
+.div1:hover .p2 {
+  color:$primary-100;
+}
+
+.divspk , .divscg , .divsfs , .divsas , .divshs{
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  text-decoration: none;
+}
+
+.divspk .icon2,
+.divspk .p2{
+  color:$primary-100;
+}
+
+
+.divscg .icon2,
+.divscg .p2{
+  color:$primary-100;
+}
+
+
+.divsfs .icon2,
+.divsfs .p2{
+  color:$primary-100;
+}
+
+.divsas .icon2,
+.divsas .p2{
+  color:$primary-100;
+}
+
+
+.divshs .icon2,
+.divshs .p2{
+  color:$primary-100;
+}
+
+
+@media (max-width: 768px) {
+  .Rectangle2{
+    visibility: hidden;
+  }
+
+  .Rectangle1{
+    margin-top: 0%;
+    width: 100%;
+    height: 5rem;
+  }
+
+  .imageya{
+    height: 4rem;
+    width:100%;
+    margin-left: 20%;
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

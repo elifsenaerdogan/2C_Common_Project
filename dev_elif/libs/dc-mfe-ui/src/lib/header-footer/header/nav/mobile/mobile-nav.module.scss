@@ -1,0 +1,53 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkcelAppMobilMenuWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  pointer-events: none;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  max-width: 100%;
+  background: white;
+  background-image: url('../../../../../others/assets/images/header/menu-background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  z-index: 5;
+  opacity: 0;
+
+  &__opened {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s ease;
+    transition: all 0.2s;
+    z-index: 2;
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &__header {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3.3125rem;
+  }
+  &__footer {
+    padding-top: 3.3125rem;
+
+    &--buttons {
+      margin: 0 1rem 1rem 1rem;
+    }
+  }
+}

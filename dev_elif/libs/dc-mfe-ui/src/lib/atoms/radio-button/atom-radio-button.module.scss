@@ -1,0 +1,84 @@
+@import '@others/assets/styles/variables.scss';
+
+@mixin radioButtonCirckle {
+  & :global(.ant-radio) {
+    div:first-child {
+      display: none;
+    }
+
+    & span:global(.ant-radio-inner) {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-color: $bluey-grey;
+      transition: none;
+
+      &::after {
+        transition: none;
+      }
+    }
+  }
+  & :global(.ant-radio-checked) {
+    & div {
+      display: none;
+    }
+    &::after {
+      border: none;
+    }
+
+    & span:global(.ant-radio-inner) {
+      background-color: $white;
+      &::after {
+        transform: scale(1);
+        background-color: $secondary;
+        transition: none;
+        width: 0.875rem;
+        height: 0.875rem;
+        margin-block-start: -0.4375rem;
+        margin-inline-start: -0.4375rem;
+        border: none;
+      }
+    }
+  }
+}
+
+.a-trkclAppRadioButton {
+  align-items: center;
+  border: 1px solid;
+  border-radius: 0.625rem;
+  font-weight: 700;
+  line-height: 1;
+  border-color: $lines;
+  margin-inline-end: 0;
+  color: $bluey-grey;
+  padding: 1rem;
+  @include radioButtonCirckle;
+  width: 100%;
+
+  &:global(.ant-radio-wrapper-checked) {
+    border-color: $primary-100;
+  }
+  &:global(.ant-radio-wrapper) > span:last-child {
+    display: block;
+    width: 100%;
+    padding-inline-end: 0;
+    padding-inline-start: 12px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__name {
+    &--checked {
+      color: $primary-100;
+    }
+  }
+  &__divider {
+    height: 2rem;
+    margin: 0;
+    color: $lines;
+  }
+}

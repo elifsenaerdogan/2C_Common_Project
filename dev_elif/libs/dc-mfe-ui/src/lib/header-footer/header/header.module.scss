@@ -1,0 +1,105 @@
+@import '@others/assets/styles/variables.scss';
+.trkclAppHeaderWrapper {
+  position: sticky;
+  will-change: transform;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  -o-transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  transform: translateY(0);
+  &.trkclAppHeaderUnPinned {
+    position: relative;
+    transform: translateY(-100%);
+  }
+  & .trkclAppHeader {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  & .trkclAppHeaderIndividual {
+    background-color: $header-color;
+  }
+  & .trkclAppHeaderCorporate {
+    background-color: $primary-200;
+  }
+}
+
+.trkclAppHeaderContent {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1440px;
+  padding: 15px 0px;
+  @media screen and (max-width: 768px) {
+    justify-content: space-between;
+    padding: 15px 1rem;
+  }
+}
+
+.trkclAppHeaderLogoSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 32px;
+  padding: 0.4375rem 0;
+  box-sizing: border-box;
+  &.trkclAppHeaderDefaultLogo {
+    width: 2.125rem;
+    height: 2.125rem;
+  }
+  &.trkclAppHeaderCorporateLogo {
+    width: 8.25rem;
+    height: 2.125rem;
+  }
+  & > img {
+    width: 100%;
+  }
+}
+.trkclAppNavigation {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.trkclAppFastActions {
+  color: white;
+  font-weight: 500;
+  margin-right: 24px;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.trkclAppHeaderLine {
+  height: 100%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-right: 24px;
+}
+.trkclAppHeaderActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 8px;
+  & .trkclAppHeaderActionsIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.trkclAppHeaderActionsActiveIcon {
+      color: $secondary;
+    }
+    &:hover {
+      color: $secondary;
+    }
+  }
+}

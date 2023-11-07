@@ -1,0 +1,42 @@
+@import '@others/assets/styles/variables.scss';
+.trcklAppModal {
+  font-family: 'GreycliffCF Normal', sans-serif;
+
+  &__closeIcon {
+    color: $color-darknavy;
+  }
+
+  &__background {
+    background-color: $black;
+
+    &__popupWrapper {
+      color: $dark;
+      box-shadow: 0 2px 10px -6px $dark;
+      top: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & :global(.ant-modal-content) {
+        border-radius: 0.625rem;
+        background-color: $white;
+
+        & :global(.ant-modal-close) {
+          width: 1rem;
+          height: 1rem;
+          position: absolute;
+          right: 1rem;
+          top: 1rem;
+        }
+
+        & :global(.ant-modal-body) {
+        }
+        & :global(.ant-modal-footer) {
+          margin-top: 0;
+          text-align: start;
+        }
+      }
+    }
+  }
+}

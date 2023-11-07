@@ -1,0 +1,63 @@
+@import '@others/assets/styles/variables.scss';
+
+.a-trkclAppStatusBarWrapper {
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+
+  &__statusBar {
+    padding: 0 0.625rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 1440px;
+
+    &--list {
+      display: inline-flex;
+      padding-left: 0;
+      list-style: none;
+      margin: 0;
+
+      justify-content: space-between;
+
+      & li {
+        display: flex;
+        align-items: center;
+        line-height: 2;
+      }
+
+      & .trkclAppStatusBarListItemDivider {
+        display: inline-block;
+        margin: 0 0.625rem;
+        height: 0.8375;
+        border-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    & .trkclAppStatusBarListItem {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.4);
+      &:hover {
+        color: $secondary;
+      }
+    }
+
+    & .trkclAppStatusBarListItemActive {
+      text-decoration: none;
+      color: $white;
+      font-weight: 600;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  &__individualBgColor {
+    background-color: $individual-status;
+  }
+  &__corporateBgColor {
+    background-color: $corporate-status;
+  }
+}

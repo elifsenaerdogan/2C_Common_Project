@@ -1,0 +1,21 @@
+$hover-color: #ffc900;
+.trkclAppLeftSideMenuList {
+  display: flex;
+  line-height: 2;
+  list-style: none;
+  
+  &__column {
+    display: inline-block;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    div {
+      width: 100%;
+      color: white;
+      &:hover {
+        color: $hover-color;
+        cursor: pointer;
+      }
+    }
+  }
+}

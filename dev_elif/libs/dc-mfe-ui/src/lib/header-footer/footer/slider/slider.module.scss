@@ -1,0 +1,51 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkclAppCarousel {
+  margin: 3.25rem 1.5rem 2.625rem;
+
+  :global(.slick-prev),
+  :global(.slick-next),
+  :global(.slick-prev:focus),
+  :global(.slick-next:focus),
+  :global(.slick-prev:hover),
+  :global(.slick-next:hover) {
+    font-size: inherit;
+    color: inherit;
+  }
+
+  :global(.slick-prev::after),
+  :global(.slick-prev::before),
+  :global(.slick-next::after),
+  :global(.slick-next::before) {
+    display: none;
+  }
+
+  :global(.slick-slide > div) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .trkcllAppPartnerWrapper {
+    width: 100px !important;
+    max-width: 105px !important;
+    height: 40px;
+    margin: auto 0;
+    cursor: pointer;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .trkclAppCarousel {
+    margin: 1.5625rem 0 1.5625rem 1rem;
+    .trkcllAppPartnerWrapper {
+      width: auto !important;
+      margin-right: 2rem;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.mobileNav {
+  background: transparent;
+  color: inherit;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.5px;
+
+  & div[aria-expanded] {
+    padding: 1.5625rem 1rem !important;
+    margin-inline: 0 !important;
+    &:hover {
+      background-color: transparent !important;
+    }
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+  }
+
+  & div[aria-expanded='true'] {
+    color: #ffc900;
+    background-color: transparent !important;
+  }
+
+  & li[role='none'] {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+  }
+  :global(.ant-menu-item-only-child) {
+    padding-left: 2.625rem !important;
+  }
+  :global(.ant-menu-submenu-arrow::before),
+  :global(.ant-menu-submenu-arrow::after) {
+    width: 8px;
+    height: 3.5px;
+  }
+
+  .menuExpandIcon {
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+
+    &.openMenuIcon {
+      transform: rotate(-270deg);
+      -ms-transform: rotate(-270deg);
+      -webkit-transform: rotate(-270deg);
+    }
+  }
+}

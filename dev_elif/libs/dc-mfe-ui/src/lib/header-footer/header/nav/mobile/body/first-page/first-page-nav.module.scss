@@ -1,0 +1,92 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkclAppMobileNav {
+  background: transparent;
+  color: inherit;
+  padding: 0 1rem !important;
+  border-inline-end: none !important;
+  background: none !important;
+
+  div[aria-expanded='false'] {
+    border-bottom: 1px solid $lines;
+  }
+
+  :global(.ant-menu-submenu-title) {
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    height: 3.3125rem !important;
+    color: $dark !important;
+
+    &:hover {
+      background: none !important;
+    }
+
+    & .trkclAppMobileNav__category {
+      margin-left: 0.5rem;
+      color: $dark;
+    }
+
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+
+  :global(.ant-menu-sub) {
+    background-color: $shade !important;
+    border-radius: 0.625rem !important;
+    padding: 1.25rem !important;
+    padding-bottom: 0 !important;
+
+    :global(.ant-menu-item) {
+      cursor: default;
+      margin: 0 !important;
+      margin-bottom: 1.25rem !important;
+      padding: 0 !important;
+      height: inherit !important;
+      line-height: inherit !important;
+      background: none !important;
+
+      &:hover {
+        background: none !important;
+      }
+
+      :global(.ant-menu-title-content) {
+        height: inherit !important;
+        line-height: inherit !important;
+
+        & .trkclAppMobileNav__subcategory {
+          color: $dark;
+          height: 1.5rem;
+          line-height: 1.5rem;
+          cursor: pointer;
+        }
+
+        & .trkclAppMobileNav__subcategory--pasaj {
+        }
+
+        & .trkclAppMobileNav__subcategory--showall {
+          color: $dark;
+        }
+      }
+    }
+  }
+
+  :global(.ant-menu-submenu-arrow::before),
+  :global(.ant-menu-submenu-arrow::after) {
+    width: 8px;
+    height: 3.5px;
+  }
+
+  .menuExpandIcon {
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+
+    &.openMenuIcon {
+      transform: rotate(-270deg);
+      -ms-transform: rotate(-270deg);
+      -webkit-transform: rotate(-270deg);
+    }
+  }
+}

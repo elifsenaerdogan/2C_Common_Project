@@ -1,0 +1,62 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkcllAppCopyrightWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.0625rem;
+  padding-bottom: 1.375rem;
+  color: $white-50;
+
+  .trkcllAppCopyrightNav {
+    display: flex;
+    a {
+      color: inherit;
+      margin-right: 1.25rem;
+    }
+  }
+
+  .trkcllAppQrContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .trkcllAppEtbis {
+      width: 35px;
+      height: 40px;
+      margin-right: 1rem;
+      a {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .trkcllAppCopyrightWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.0625rem 1rem 1.375rem;
+
+    .trkcllAppCopyrightNav {
+      flex-direction: column;
+      a {
+        color: $white;
+        padding: 0.625rem 0;
+      }
+      .trkcllAppCopyrightNavTarife {
+        display: none;
+      }
+    }
+
+    .trkcllAppQrContainer {
+      .trkcllAppEtbis {
+        display: none;
+      }
+    }
+  }
+}

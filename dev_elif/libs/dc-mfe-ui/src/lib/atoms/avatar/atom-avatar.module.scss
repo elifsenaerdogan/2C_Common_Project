@@ -1,0 +1,54 @@
+@import '@others/assets/styles/variables.scss';
+.a-trkclAppAvatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+
+  &__image {
+    border-radius: 50%;
+    &--border {
+      border: 3px solid $secondary;
+    }
+  }
+
+  &__notification {
+    background-color: $secondary;
+    position: absolute;
+    border-radius: 40%;
+    width: 24px;
+    height: 17px;
+    top: -0.8rem;
+    right: -0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+  }
+
+  &__small {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &__medium {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  &__large {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__default {
+    background-color: $shade;
+    color: $dark;
+  }
+
+  &__yellow {
+    background-color: $secondary;
+    color: $dark;
+  }
+}

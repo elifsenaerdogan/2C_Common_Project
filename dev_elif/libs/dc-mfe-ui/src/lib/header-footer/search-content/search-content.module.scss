@@ -1,0 +1,72 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkclAppSearchContentWrapper {
+  width: 100%;
+  box-sizing: border-box;
+  @media (max-width: 768px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    & :global(.ant-row) {
+      width: 100%;
+      & :global(.ant-col) {
+        width: 100%;
+        margin: 0;
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+    }
+  }
+
+  & .trkclAppSearchFastActions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.375rem;
+    overflow: auto;
+  }
+
+  & .trkclAppSearchTitleWrapper {
+    text-align: center;
+
+    & .trkclAppSearchTitle {
+      color: #fff;
+      margin-bottom: 1.375rem;
+      line-height: 1;
+    }
+  }
+
+  & .trkclAppSearchPopularSection {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    & > h6 {
+      color: $white;
+      line-height: 1;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    & .trkclAppSearchPopularItems {
+      display: flex;
+      text-align: left;
+      gap: 0.5rem;
+      padding: 0.5rem;
+      margin-bottom: 1.5rem;
+      scroll-padding: 1rem;
+      overflow: auto;
+      scroll-snap-type: x mandatory;
+      & .trkclAppSearchPopularItem {
+        width: 100%;
+
+        margin-bottom: 1.5rem;
+
+        @media (max-width: 768px) {
+          flex: 0 0 auto;
+          scroll-snap-align: start;
+          transition: all 0.2s;
+        }
+      }
+    }
+  }
+}

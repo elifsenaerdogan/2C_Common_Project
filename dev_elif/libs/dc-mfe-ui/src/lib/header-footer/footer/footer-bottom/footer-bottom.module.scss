@@ -1,0 +1,24 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkcllAppDivider {
+  border-width: 2px;
+  border-color: $white;
+  color: $white;
+  opacity: 0.1;
+  margin: 0;
+}
+
+.trkcllAppFooterBottom {
+  background-color: $primary-200;
+
+  .trkcllAppContainerWidth {
+    width: 1180px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .trkcllAppContainerWidth {
+    width: 100%;
+  }
+}

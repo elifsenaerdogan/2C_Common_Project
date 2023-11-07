@@ -1,0 +1,22 @@
+[submodule "apps/dc-mfe-shell"]
+	path = apps/dc-mfe-shell
+	url = https://stash.turkcell.com.tr/git/scm/sh200711/dc-mfe-shell.git
+	branch = master
+[submodule "libs/dc-mfe-ui"]
+	path = libs/dc-mfe-ui
+	url = https://stash.turkcell.com.tr/git/scm/sh200711/dc-mfe-ui.git
+	branch = master
+[submodule "apps/dc-mfe-tl-topup"]
+	path = apps/dc-mfe-tl-topup
+	url = https://stash.turkcell.com.tr/git/scm/sh200711/dc-mfe-tl-topup.git
+	branch = master
+
+[submodule "apps/dc-mfe-myaccount"]
+	path = apps/dc-mfe-myaccount
+	url = https://stash.turkcell.com.tr/git/scm/sh200711/dc-mfe-myaccount.git
+[submodule "apps/dc-mfe-homepage"]
+	path = apps/dc-mfe-homepage
+	url = https://stash.turkcell.com.tr/git/scm/sh200711/dc-mfe-homepage.git
+[submodule "apps/dc-mfe-help-tools"]
+	path = apps/dc-mfe-help-tools
+	url = https://stash.turkcell.com.tr/git/scm/sh200711/dc-mfe-help-tools.git

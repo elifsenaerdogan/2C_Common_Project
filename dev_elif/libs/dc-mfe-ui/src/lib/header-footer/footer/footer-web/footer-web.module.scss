@@ -1,0 +1,33 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkcllAppDivider {
+  border-width: 2px;
+  border-color: $white;
+  color: $white;
+  opacity: 0.1;
+  margin: 0;
+}
+
+.trkcllAppWebContentContainer {
+  .trkcllAppNavRow {
+    padding: 1.875rem 0;
+  }
+  .trkcllAppMiddleRow {
+    padding: 1.875rem 0 1.875rem 0;
+  }
+
+  &.trkcllAppHideElement {
+    display: none;
+  }
+}
+
+.trkcllAppContainerWidth {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+  .trkcllAppContainerWidth {
+    width: 100%;
+  }
+}
