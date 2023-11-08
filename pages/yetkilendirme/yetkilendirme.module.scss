@@ -1,0 +1,272 @@
+.dis{
+
+  display: flex;
+  flex-direction: column;
+  background-color: #123341;
+  width: 20%;
+  height: 50vw;
+  font-size: 2.5vw;
+
+}
+.en1{
+  margin-top: 5%;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.ikyaz1{
+  display: flex;
+  flex-direction: row;
+}
+.linkdiv1{
+  display: flex;
+  flex-direction: row;
+}
+.linkdiv2{
+  display: flex;
+  flex-direction: row;
+}
+.linkdiv3{
+  display: flex;
+  flex-direction: row;
+}
+.ikon1{
+  font-size: 2vw;
+  margin-top: 2%;
+  color: #FFFFFF;
+}
+.yazi1{
+  font-weight: normal;
+  margin-left: 5%;
+  font-size: 1vw;
+  color: #FFFFFF;
+}
+.altalt{
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.alt1{
+  margin-left: 30%;
+  margin-top: -32%;
+  font-weight: normal;
+  font-size: 0.9vw;
+  color: #FFFFFF;
+}
+.alt2{
+  font-weight: normal;
+  margin-top: -10%;
+  font-size: 0.9vw;
+  color: #FFFFFF;
+  margin-left: 30%;
+  margin-top: -32%;
+}
+.ikon2{
+  font-size: 2vw;
+  color: #FFFFFF;
+}
+.ikon3{
+  font-size: 2vw;
+  color: #FFFFFF;
+}
+.ikon4{
+  font-size: 2vw;
+  color: #FFFFFF;
+}
+.alt4{
+  font-weight: normal;
+  margin-top: -10%;
+  font-size: 0.9vw;
+  color: #FFFFFF;
+  margin-left: 30%;
+  margin-top: -32%;
+}
+.altdep{
+  margin-left: 40%;
+  margin-top: -42%;
+  font-weight: normal;
+  font-size: 0.9vw;
+  color: #FFFFFF;
+}
+.altrn{
+  margin-left: 40%;
+  margin-top: -42%;
+  font-weight: normal;
+  font-size: 0.9vw;
+  color: #FFFFFF;
+
+}
+.har1{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.ikonhr{
+  font-size: 2.2vw;
+  margin-top: 2%;
+  color: #FFFFFF;
+}
+
+.disdis{
+  display: flex;
+  flex-direction: row;
+}
+.yetdis{
+  width: 80%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.yetilk{
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 5%;
+}
+.yetikon01{
+  font-size: 3vw;
+  color:#9ED0C8;
+}
+.yetilkyazisi01{
+  margin-left: 1%;
+  font-size: 1.5vw;
+}
+.cardyet{
+  border-radius: 10px 10px 10px 10px;
+margin-top: 5%;
+  background-color: #FFFFFF;
+  width: 80%;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+}
+.card01{
+  margin-left: 5%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.card001{
+  display: flex;
+  flex-direction: row;
+}
+.kodyazisiyet{
+  font-size: 1.2vw;
+}
+.yetkikulkod{
+  border-radius: 8px 8px 8px 8px;
+  margin-top: 2%;
+  margin-left: 8%;
+  width: 50%;
+  height: 1.8vw;
+}
+.card002{
+  display: flex;
+  flex-direction: row;
+  margin-top: 8%;
+}
+.sefyetyazi{
+  font-size: 1.2vw;
+}
+.yetsef{
+  border-radius: 8px 8px 8px 8px;
+  margin-top: 2%;
+  margin-left: 31%;
+  width: 51%;
+  height: 1.8vw;
+}
+.card02{
+  margin-left: 5%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.card003{
+  display: flex;
+  flex-direction: row;
+}
+.yetkendiyazi{
+  font-size: 1.2vw;
+}
+.yetg{
+  border-radius: 8px 8px 8px 8px;
+  margin-left: 18%;
+  width: 60%;
+  height: 1.8vw;
+}
+.card004{
+  margin-left: 5%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+}
+.yetsifre{
+  font-size: 1.2vw;
+}
+.yetsifresii{
+  border-radius: 8px 8px 8px 8px;
+  margin-left: 20%;
+  width: 60%;
+  height: 1.5vw;
+  margin-top: 3%;
+}
+.yetbutton{
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  margin-left: 65%;
+}
+.yetbut{
+  color: #FFFFFF;
+  border: none;
+  width: 40%;
+  height: 1.5vw;
+  background-color: #9BCD5C;
+  font-size: 0.8vw;
+  border-radius: 22px 22px 22px 22px;
+  cursor: pointer;
+}
+.yetip{
+  cursor: pointer;
+  margin-top: 3%;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 22px 22px 22px 22px;
+  width: 40%;
+  height: 1.5vw;
+  background-color: #CD1C04;
+  font-size: 0.8vw;
+}
+.perkayit001{
+  display: flex;
+  flex-direction: column;
+  margin-left: 120%;
+  margin-top: 40%;
+}
+.okeyikon{
+  font-size: 6vw;
+  color: #9BCD5C;
+
+}
+.okeyyazi{
+  margin-top: 10%;
+  margin-left: -40%;
+  font-size: 1.5vw;
+}
+.katkayik{
+  display: flex;
+  flex-direction: row;
+  margin-top: 8%;
+  margin-left: 10%;
+}
+.katkayitik0{
+  font-size: 3vw;
+  color:#9ED0C8;
+}
+.katkayityazi00{
+  color:#9ED0C8;
+  font-size: 1.8vw;
+  margin-top: 3%;
+  margin-left: 3%;
+}

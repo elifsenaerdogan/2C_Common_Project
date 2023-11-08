@@ -1,0 +1,94 @@
+.card{
+  margin-left: 33%;
+  margin-top: 10%;
+  width: 35%;
+  height: 30vw;
+
+  display: flex;
+  flex-direction: column;
+}
+.ilk01{
+  margin-top: 3%;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: row;
+}
+.rsm{
+  width: 10%;
+  height: 2.5vw;
+}
+.yazirsm{
+  margin-left: 5%;
+  font-size: 1.2vw;
+  color: #123341;
+}
+.girisyazi{
+  font-weight: bold;
+  font-size: 1.6vw;
+  margin-left: 40%;
+}
+.disdis{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+}
+.dis1{
+  display: flex;
+  flex-direction: row;
+}
+.dis2{
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+}
+.dis3{
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+}
+.dis4{
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+}
+.username{
+  font-size: 1.2vw;
+}
+.ikulad{
+  margin-top: 2%;
+  border-radius: 8px 8px 8px 8px;
+  margin-left: 10%;
+  width: 40%;
+  height: 1.5vw;
+}
+.ikulsif{
+  margin-top: 2%;
+  border-radius: 8px 8px 8px 8px;
+  margin-left: 28%;
+  width: 40%;
+  height: 1.5vw;
+}
+.ikulassoyad{
+  margin-top: 2%;
+  border-radius: 8px 8px 8px 8px;
+  margin-left: 19%;
+  width: 39%;
+  height: 1.5vw;
+}
+.ikulyetki{
+  margin-top: 2%;
+  border-radius: 8px 8px 8px 8px;
+  margin-left: 27%;
+  width: 41%;
+  height: 1.8vw;
+}
+.girisbtn{
+  margin-left: 32%;
+  margin-top: 7%;
+  width: 28%;
+  height: 2vw;
+  border: none;
+  border-radius: 22px 22px 22px 22px;
+  background-color: #9ED0C8;
+
+}

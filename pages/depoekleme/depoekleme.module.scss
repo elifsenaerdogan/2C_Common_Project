@@ -1,0 +1,54 @@
+.yandis{
+  margin-top: -50%;
+  display: flex;
+  flex-direction: column;
+}
+.ilk{
+  display: flex;
+  flex-direction: row;
+  margin-left: 25%;
+  margin-top: 3%;
+}
+.ikon1{
+  font-size: 2.5vw;
+  color:#9ED0C8;
+}
+.ikon1yazi{
+
+  font-size: 1.5vw;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+.card{
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 5%;
+  margin-left: 25%;
+  background-color: #FFFFFF ;
+  width: 65%;
+  height: 8vw;
+  display: flex;
+  flex-direction: row;
+}
+.yazicard{
+  margin-top: 5%;
+  font-size: 1.3vw;
+  margin-left: 3%;
+}
+.selectcard{
+  border-radius: 10px 10px 10px 10px ;
+  margin-top: 5%;
+  width: 30%;
+  height: 1.7vw;
+  margin-left: 20%;
+  border: none;
+}
+.sec{
+  border-radius: 10px 10px 10px 10px ;
+  border: none;
+  margin-top: 5%;
+  margin-left: 7%;
+  width: 20%;
+  height: 2vw;
+  background-color: #9BCD5C;
+  color: white;
+}

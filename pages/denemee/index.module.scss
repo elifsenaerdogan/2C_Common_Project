@@ -1,0 +1,196 @@
+.endisyazi{
+  font-size: 3vw;
+  font-weight: normal;
+  color: blue;
+  margin-left: 40%;
+}
+.dis{
+
+  display: flex;
+  flex-direction: column;
+}
+.a001{
+  margin-left: 10%;
+  width: 80%;
+  height: 50%;
+
+}
+.ilkfoto{
+  border-radius: 22px 22px 22px 22px;
+
+  width: 100%;
+  height: 25vw;
+}
+.card{
+  border-radius: 22px 22px 22px 22px;
+  margin-top: 3%;
+  margin-left: 10%;
+  width: 100%;
+
+
+}
+.resim{
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 1%;
+
+  margin-left: 5%;
+  width: 8%;
+  height: 8vw;
+}
+.yazi1{
+  margin-top: 5%;
+  margin-left: 25%;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: crimson;
+}
+.yaziad{
+  margin-top: 3.5%;
+  margin-left: 8%;
+  font-weight: normal;
+  font-size: 1.5vw;
+  color: darkblue;
+}
+.yazikod{
+  margin-top: 3.5%;
+  margin-left: 5%;
+  font-size: 1.5vw;
+  font-weight: normal;
+  color: darkblue;
+ justify-content: center;
+}
+.ad{
+  margin-left: 8%;
+  margin-top: 3.5%;
+  font-weight: normal;
+  font-size: 1.5vw;
+  color: black;
+}
+.kod{
+  margin-top: 3.5%;
+  margin-left: 8%;
+  font-weight: normal;
+  font-size: 1.5vw;
+  color: black;
+}
+.table{
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.adyanyana{
+  width: 90%;
+  height: 10vw;
+  border: none;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+}
+.adyanyana:hover{
+  border: 2px solid darkblue;
+}
+.iletbil{
+  margin-left: 15%;
+  margin-top: 8%;
+}
+.ikon6{
+  font-size: 1.5vw;
+  margin-top: 0%;
+  color: black;
+}
+.numyaz{
+  margin-left: 3%;
+  font-weight: normal;
+  font-size: 1.1vw;
+  margin-top: 0%;
+}
+.sosyaz{
+  margin-left: 3%;
+  font-weight: normal;
+  font-size: 1.1vw;
+  margin-top: 0%;
+}
+.ikon7{
+  font-size: 1.5vw;
+  margin-top: 0%;
+  color: black;
+}
+.instayaz{
+  margin-left: 7%;
+  font-weight: normal;
+  font-size: 1.1vw;
+  margin-top: 0%;
+}
+.sosbut{
+  margin-left: -1%;
+
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+  border: none;
+  border-radius: 22px 22px 22px 22px;
+  height: 5vw;
+  width: 50%;
+  background-color: cornsilk;
+}
+.sosbut:hover{
+  border: 2px solid crimson;
+}
+.ins{
+  margin-top: 7%;
+  margin-left: -35%;
+  display: flex;
+  flex-direction: row;
+}
+.fac{
+  margin-top: 7%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+}
+.tiv{
+  margin-top: 7%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+}
+.biz{
+  margin-top: -1%;
+  margin-left: 20%;
+  font-size: 1.4vw;
+  font-weight: normal;
+  color: crimson;
+}
+.sabut{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+  border: none;
+  border-radius: 22px 22px 22px 22px;
+  height: 2vw;
+  width: 40%;
+  background-color: cornsilk;
+}
+.sabut:hover{
+  border: 2px solid crimson;
+}
+.sabut1{
+  margin-left: 50%;
+  display: flex;
+  flex-direction: row;
+  margin-top: -2%;
+  border: none;
+  border-radius: 22px 22px 22px 22px;
+  height: 2vw;
+  width: 40%;
+  background-color: cornsilk;
+}
+.sabut1:hover{
+  border: 2px solid crimson;
+}
+.epostayaz{
+  font-weight: normal;
+  font-size: 1.1vw;
+  margin-top: 0%;
+  margin-left: 3%;
+}
