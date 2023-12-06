@@ -1,0 +1,23 @@
+{
+  "name": "my-appnew",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "setup": "evershop install",
+    "build": "evershop build",
+    "start": "evershop start",
+    "start:debug": "evershop start --debug",
+    "dev": "evershop dev",
+    "user:create": "evershop user:create",
+    "user:changePassword": "evershop user:changePassword"
+  },
+  "dependencies": {
+    "@evershop/evershop": "^1.0.0-rc.8",
+    "i18next": "^23.7.7",
+    "i18next-http-backend": "^2.4.2",
+    "react-i18next": "^13.5.0"
+  },
+  "workspaces": [
+    "extensions/*"
+  ]
+}
