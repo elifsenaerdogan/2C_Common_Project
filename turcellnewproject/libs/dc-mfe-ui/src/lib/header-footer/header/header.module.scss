@@ -1,0 +1,113 @@
+@import '@others/assets/styles/variables.scss';
+.trkclAppHeaderWrapper {
+  position: sticky;
+  will-change: transform;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  -o-transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  transform: translateY(0);
+  &.trkclAppHeaderUnPinned {
+    position: relative;
+    transform: translateY(-100%);
+  }
+  & .trkclAppHeader {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  & .trkclAppHeaderIndividual {
+    background-color: $header-color;
+  }
+
+  & .trkclAppHeaderYas {
+    background-color: $black-opaque;
+  }
+}
+
+.trkclAppHeaderContent {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 90rem;
+  padding: 0.9375rem 0.625rem;
+  @media screen and (max-width: 768px) {
+    justify-content: space-between;
+    padding: 0.9375rem 1rem;
+  }
+}
+
+.trkclAppHeaderLogoSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 2rem;
+  padding: 0.4375rem 0;
+  box-sizing: border-box;
+
+  &.trkclAppHeaderCorporateLogo {
+    width: 8.25rem;
+    height: 2.125rem;
+  }
+  & > img {
+    width: 100%;
+  }
+}
+.trkclAppNavigation {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.trkclAppFastActions {
+  color: white;
+  margin-right: 1.25rem;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  cursor: pointer;
+  align-items: center;
+  position: relative;
+  z-index: 23;
+
+  &__active {
+    color: $secondary;
+  }
+
+  &__icon {
+    margin-left: 0.5rem;
+    height: 1.125rem;
+    transform: rotateZ(-90deg);
+    &--rotate {
+      transform: rotateZ(90deg);
+    }
+  }
+
+  &__quickTransactions {
+    width: 15rem;
+    position: absolute;
+    top: 2rem;
+    padding: 1.25rem;
+    box-shadow: 0 0.5rem 0.625rem -0.5rem rgba(0, 0, 0, 0.1),
+      0 0.375rem 1.875rem 0.3125rem rgba(0, 0, 0, 0.1),
+      0 1rem 1.5rem 2px rgba(0, 0, 0, 0.1);
+    background-color: $white;
+    border-radius: 0.625rem 0 0 0.625rem;
+  }
+}
+
+.trkclAppHeaderLine {
+  height: 100%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-right: 1.5rem;
+}

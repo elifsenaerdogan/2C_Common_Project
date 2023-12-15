@@ -1,0 +1,36 @@
+@import 'variables';
+@import 'fonts';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'GreycliffCF Normal', Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.app_wrapper {
+  height: 100vh;
+  // & .search_dropdown_wrapper{
+  //   min-width: 600px;
+  //   max-width: 600px;
+  // }
+}
+
+.resultItemWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  & .resultCategory {
+    color: $slate-grey;
+    font-family: 'GreycliffCF Normal', sans-serif;
+    font-size: 14px;
+    line-height: 1.57;
+  }
+  & .resultText {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.38;
+    color: $dark;
+  }
+}

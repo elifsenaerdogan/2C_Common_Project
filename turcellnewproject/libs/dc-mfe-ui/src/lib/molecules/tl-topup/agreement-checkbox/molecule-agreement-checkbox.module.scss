@@ -1,0 +1,44 @@
+@import '@others/assets/styles/variables.scss';
+
+.m-trkclApp-agreementCheckbox {
+  display: flex;
+  align-items: center;
+  &__checkbox {
+    &--registration {
+      display: flex;
+      align-items: center;
+
+      &-isChecked {
+        color: $black;
+      }
+      &-isNotChecked {
+        color: $slate-grey;
+      }
+      &-terms {
+        color: $primary-100;
+        margin: 0 0.5rem;
+      }
+      &-image {
+        margin: 0 0.5rem;
+      }
+    }
+  }
+  &__fragments {
+    font-weight: bold;
+    color: $dark;
+    cursor: pointer;
+    flex-wrap: wrap;
+
+    &--item {
+      color: $primary-100;
+    }
+    &--seperator {
+      color: $dark !important;
+    }
+  }
+
+  &__ErrorMessage {
+    color: $form-error-color;
+    padding-left: 2.375rem;
+  }
+}

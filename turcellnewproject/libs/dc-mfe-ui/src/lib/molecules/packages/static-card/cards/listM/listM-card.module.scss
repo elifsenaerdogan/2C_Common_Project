@@ -1,0 +1,196 @@
+@import '@others/assets/styles/variables.scss';
+
+.m-trkclStatic {
+  background-color: $alternative-100;
+  position: relative;
+  border-radius: 0.625rem;
+  max-width: 19rem;
+  padding: 3rem 0.75rem 0.75rem 0.75rem;
+
+  &__welcome {
+    font-size: 1.313rem !important;
+    color: $white;
+    margin-bottom: 0.875rem;
+  }
+  &__filterArea {
+    display: inline-block;
+    padding: 0.375rem 0.5rem 0.375rem 0.75rem;
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
+    background-color: $secondary;
+    border-top-left-radius: 0.625rem;
+    margin-bottom: 0.75rem;
+  }
+  &__packageDetail {
+    display: flex;
+    justify-content: space-between;
+    background-color: $alternative-200;
+    border-radius: 0.5rem;
+    padding: 0.75rem 0.75rem 1.05rem 0.75rem;
+  }
+  &__priceDiv {
+    margin-left: 3.875rem;
+  }
+  &__monthly {
+    color: $white;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  &__price {
+    color: $white;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    text-align: center;
+    display: inline;
+  }
+  &__gb {
+    color: $white;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    text-align: center;
+    display: inline;
+  }
+  &__priceText {
+    color: $white;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  &__priceText1 {
+    color: $white;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  &__staticBtn {
+    padding: 0.438rem 4.281rem 0.563rem !important;
+    background-color: $secondary !important;
+    border-radius: 1.25rem !important;
+    color: $dark !important;
+    border-color: $secondary !important;
+    width: 100%;
+    span {
+      font-size: 1rem;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+    }
+  }
+  &__staticBtn:hover {
+    background-color: $secondary !important;
+    border-color: $dark !important;
+    color: $dark !important;
+    border-color: $secondary !important;
+  }
+}
+
+.m-trkclStatic1 {
+  background-color: $alternative-100;
+  position: relative;
+  background-image: url('../../../../../../others/assets/images/login-group.webp');
+  background-size: cover;
+  border-radius: 0.675rem;
+  max-width: 19rem;
+  padding: 3rem 0.75rem 0.75rem 0.75rem;
+
+  &__welcome {
+    font-size: 1.313rem !important;
+    color: $white;
+    margin-bottom: 2rem;
+  }
+  &__filterArea {
+    display: inline-block;
+    padding: 0.375rem 0.5rem 0.375rem 0.75rem;
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
+    background-color: $secondary;
+    border-top-left-radius: 0.625rem;
+    margin-bottom: 0.75rem;
+  }
+  &__packageDetail {
+    display: flex;
+    justify-content: space-between;
+    background-color: $alternative-200;
+    border-radius: 0.5rem;
+    padding: 1rem 0 1rem 1rem;
+  }
+  &__priceDiv {
+    margin-left: 3.875rem;
+  }
+  &__monthly {
+    color: $white;
+    span {
+      margin-left: 0.688rem;
+    }
+  }
+  &__price {
+    color: $white;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    text-align: center;
+    display: inline;
+  }
+  &__gb {
+    color: $white;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    text-align: center;
+    display: inline;
+  }
+  &__priceText {
+    color: $white;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  &__priceText1 {
+    color: $white;
+    font-size: 1.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  &__staticBtn {
+    padding: 0.438rem 4.281rem 0.563rem !important;
+    background-color: $secondary !important;
+    border-radius: 1.25rem !important;
+    color: $dark !important;
+    border-color: $secondary !important;
+    width: 100%;
+    span {
+      font-size: 1rem;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+    }
+  }
+  &__staticBtn:hover {
+    background-color: $secondary !important;
+    border-color: $dark !important;
+    color: $dark !important;
+    border-color: $secondary !important;
+  }
+}

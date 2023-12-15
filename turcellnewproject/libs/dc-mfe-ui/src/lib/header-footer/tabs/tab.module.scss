@@ -1,0 +1,25 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkclAppReusableTab {
+  :global(.slick-prev),
+  :global(.slick-next),
+  :global(.slick-prev:focus),
+  :global(.slick-next:focus),
+  :global(.slick-prev:hover),
+  :global(.slick-next:hover) {
+    font-size: inherit;
+    color: inherit;
+  }
+
+  :global(.slick-prev::after),
+  :global(.slick-prev::before),
+  :global(.slick-next::after),
+  :global(.slick-next::before) {
+    display: none;
+  }
+
+  .trkclAppReusableTabDivider {
+    color: $lines;
+    margin: 0;
+  }
+}

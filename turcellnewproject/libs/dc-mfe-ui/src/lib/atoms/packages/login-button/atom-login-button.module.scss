@@ -1,0 +1,48 @@
+@import '@others/assets/styles/variables.scss';
+
+.a-trkclAppLogin {
+    display: grid;
+    position: relative;
+    background-size: cover;
+    padding: 1rem 0.844rem 1rem 1rem;
+    border-radius: 0.625rem;
+    background-image: linear-gradient(1deg, #278bbf -29%, #1a9cd5 96%);
+
+    &__loginImg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &__loginImage {
+        position: absolute;
+        left: 0;
+        top: -1rem;
+    }
+
+    &__textDiv {
+        margin-left: 3.063rem;
+    }
+    &__loginTitle {
+        color: $white;
+        margin-bottom: 0.25rem;
+    }
+    &__loginText {
+        color: $white;
+        margin-bottom:1rem;
+    }
+
+    &__loginBtn {
+        padding: 0.2rem 3.763rem 0.3rem 3.763rem;
+        background-color: $white !important;
+        border-color: $white !important;
+        color: $dark !important;
+        border-radius: 1.625rem !important;
+    }
+    &__loginBtn:hover {
+        background-color: $white !important;
+        border-color: $white !important;
+        color: $dark !important;
+    }
+}
