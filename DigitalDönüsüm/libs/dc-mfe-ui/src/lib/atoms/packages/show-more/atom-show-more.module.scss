@@ -1,0 +1,19 @@
+@import '@others/assets/styles/variables.scss';
+
+.a-trkclMore {
+  display: flex;
+  cursor: pointer;
+  
+  &__moreText {
+    color: $primary-100;
+    margin-right: 0.375rem;
+  }
+
+  &__downIcon {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    transform: rotate(-90deg);
+    color: $primary-100;
+  }
+}

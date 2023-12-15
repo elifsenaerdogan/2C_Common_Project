@@ -1,0 +1,72 @@
+{
+  "name": "dc-mfe-tl-topup",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/dc-mfe-tl-topup",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "root": "apps/dc-mfe-tl-topup",
+        "outputPath": "dist/apps/dc-mfe-tl-topup",
+        "styles": ["libs/dc-mfe-ui/src/others/assets/styles/global.scss"]
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/dc-mfe-tl-topup"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "dc-mfe-tl-topup:build",
+        "dev": true,
+        "styles": ["../../libs/dc-mfe-ui/src/others/assets/styles/global.scss"]
+
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "dc-mfe-tl-topup:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "dc-mfe-tl-topup:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nrwl/next:export",
+      "options": {
+        "buildTarget": "dc-mfe-tl-topup:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/dc-mfe-tl-topup/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/dc-mfe-tl-topup/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  },
+  "tags": []
+}

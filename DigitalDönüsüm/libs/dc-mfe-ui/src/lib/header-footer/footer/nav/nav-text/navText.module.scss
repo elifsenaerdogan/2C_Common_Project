@@ -1,0 +1,7 @@
+.trkcllAppWrapper {
+  color: #ffffff;
+  transition: color 0.3s;
+  &:hover {
+    color: #ffc900 !important;
+  }
+}
