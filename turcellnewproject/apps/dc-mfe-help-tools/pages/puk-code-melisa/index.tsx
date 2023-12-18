@@ -1,12 +1,16 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './index.module.scss';
 import Menus from '../../src/components/Menus';
 import {AtomInput, AtomRadioButton} from '@atoms';
 import IconsSim from '@others/icons/IconsSim';
 import IconsTechSpecs from "@others/icons/IconsTechSpecs";
 import classNames from 'classnames';
-import Captcha from "../../../../libs/dc-mfe-ui/src/lib/molecules/captcha/captcha";
 import {DateInput} from "@molecules";
+import Captcha from "../../../../libs/dc-mfe-ui/src/lib/molecules/captcha/captcha";
+import axios from "axios";
+import {useForm} from "react-hook-form";
+import {yupResolver} from '@hookform/resolvers/yup';
+import * as Yup from 'yup';
 
 const PukCodePagesPrivate = () => {
   const [isChecked1, setIsChecked1] = useState(true);
@@ -18,7 +22,27 @@ const PukCodePagesPrivate = () => {
   const [simno, setSimno] = useState('');
   const [formErrors, setFormErrors] = useState({ gsmno: '' , simno: '', tcno: ''});
   const [isFocused, setIsFocused] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [captchaResponse, setCaptchaResponse] = useState({
+    identifier: '',
+    sound: '',
+    image: ''
+  });
+  const [validationErrorsSC, setValidationErrorsSC] = useState({
+    gsmno: '',
+    simNumber: '',
+    captcha: '',
+  });
 
+  useEffect(() => {
+    const fetchData = async () => {
+      await getCaptchaa();
+    };
+    fetchData();
+  }, []);
+
+  let validationSchemaWithTCNo;
+  let validationSchemaWithSimCard;
   const handleCheckboxChange = (selectedCheckbox) => {
     if (selectedCheckbox === 'isChecked1') {
       setIsChecked1(true);
@@ -34,13 +58,13 @@ const PukCodePagesPrivate = () => {
   const RadioButtonSim = classNames(
     {
       [styles.RadioButtonSimSelected]: isChecked1,
-      [styles.RadioButtonSimSelected]: !isChecked2,
+      [styles.RadioButtonSimUnSelected]: !isChecked1,
     }
   );
   const RadioButtonTc = classNames(
     {
       [styles.RadioButtonSimSelected]: isChecked2,
-      [styles.RadioButtonSimSelected]: !isChecked1,
+      [styles.RadioButtonSimUnSelected]: !isChecked2,
     }
   );
   const pukCodePageSimI = classNames(
@@ -58,16 +82,16 @@ const PukCodePagesPrivate = () => {
     }
   );
   const pukCodePageSimII = classNames(
-    'text-body-bold',
-    {
-      [styles.pukCodePageSimIISelected]: isChecked1
-    }
+    'text-legal-regular-medium',
+
+      styles.pukCodePageSimIISelected
+
   );
   const pukCodePageTcII = classNames(
-    'text-body-bold',
-    {
-      [styles.pukCodePageTcIISelected]: isChecked2
-    }
+    'text-legal-regular-medium',
+
+      styles.pukCodePageTcIISelected
+
   );
   const SimCardWriteLabel = classNames(
     'text-legal-regular-medium',
@@ -176,6 +200,71 @@ const PukCodePagesPrivate = () => {
   const handleFocus = () => {
     setIsFocused(true);
   };
+  const getCaptchaa = async () => {
+    try {
+      setIsLoading(true)
+      const responsee = await axios.post(
+        `/api/gateway/captcha`,
+        {},
+        {
+          withCredentials: false,
+          headers: {
+            'User-Msisdn': '5342747427',
+            'User-SessionId': '20221228114048_3976B6DF6E44428DB5B861CA20F5C1C5',
+            'Channel-Type': 'WEB',
+            'Language-Prefix': 'tr',
+            'Content-Type': 'application/json',
+            'Cookie': '866f82bb67e9dc9390b0ae797eab002d=a7e8cf6f57913f7d0e75c01e5b0b3dd1',
+          },
+        }
+      );
+
+      const data = responsee.data;
+      setCaptchaResponse(data);
+    } catch (err) {
+      console.error('Error fetching captcha:', err);
+    } finally {
+      setIsLoading(false)
+    }
+
+  }
+
+  const handleFormSubmitSC = async (inputValue) => {
+    const selectedValidationSchema = validationSchemaWithSimCard
+
+    if (selectedValidationSchema) {
+      await selectedValidationSchema.validate({
+        gsmno: gsmno,
+        simno: simno,
+        captcha: inputValue,
+      }, {abortEarly: false})
+        .then(valid => {
+          console.log('Form doğrulandı!', valid);
+          setValidationErrorsSC({
+            gsmno: '',
+            simNumber: '',
+            captcha: '',
+          });
+        })
+        .then()
+        .catch(errors => {
+          console.error('Form doğrulaması hatalı!', errors);
+          console.log(errors);
+          console.error('Form doğrulaması hatalı!', errors.errors);
+
+          setValidationErrorsSC(errors.inner.reduce((acc, error) => {
+            acc[error.path] = error.message;
+            return acc;
+          }, {}));
+          console.log(validationErrorsSC);
+        });
+    }
+  };
+  const { register, handleSubmit, formState: { errors, isValid } } = useForm({
+    resolver: yupResolver(validationSchemaWithSimCard),
+  });
+
+
 
 
   return (
@@ -185,20 +274,22 @@ const PukCodePagesPrivate = () => {
           <Menus currentPage="puk-kodu"/>
         </div>
         <div className={styles.pukCodePageP}>
+          <div>
           <div className={styles.pukCodePageWritesIII}>
             <h1 className={styles.pukCodePageWriteI}>Puk Kodu Öğrenme</h1>
             <h3 className={styles.pukCodePageWriteII}>Puk Kodu bilgilerinizi aşağıdaki adımları kullanarak anında
               öğrenebilirsiniz.</h3>
+          </div>
           </div>
           <div>
             <div className={styles.pukCodePageAtomRadioButtons}>
               <AtomRadioButton
                 radioButtonName={" "}
                 element={<div className={styles.pukCodePageSimIconText}>
-                  <div className={styles.pukCodePageIcon}><IconsSim className={RadioButtonSim}/></div>
+                <IconsSim className={RadioButtonSim}/>
                   <div className={styles.pukCodePageSim}>
                     <p className={pukCodePageSimI}> Sim kart Numarası ile </p>
-                    <p className={pukCodePageSimII}> Sim kart numaranızı girerek sorgu yapabilirsiniz</p>
+                    <p className={pukCodePageSimII} style={{ whiteSpace: 'nowrap' }}> Sim kart numaranızı girerek sorgu yapabilirsiniz</p>
                   </div>
                 </div>}
                 value="isChecked1"
@@ -209,10 +300,10 @@ const PukCodePagesPrivate = () => {
               <AtomRadioButton
                 radioButtonName={" "}
                 element={<div className={styles.pukCodePageTcIconText}>
-                  <div className={styles.pukCodePageIcon}><IconsTechSpecs className={RadioButtonTc}/></div>
+                  <IconsTechSpecs className={RadioButtonTc}/>
                   <div className={styles.pukCodePageTc}>
                     <p className={pukCodePageTcI}>TC kimlik Numarası ile </p>
-                    <p className={pukCodePageTcII}>Tckn bilgileriniz ile sorgu yapabilirsiniz.</p>
+                    <p className={pukCodePageTcII} style={{ whiteSpace: 'nowrap' }}>Tckn bilgileriniz ile sorgu yapabilirsiniz.</p>
                   </div>
                 </div>}
                 value="isChecked2"
@@ -260,7 +351,21 @@ const PukCodePagesPrivate = () => {
                   </div>
                 </div>
                 <div className={styles.pukCodePageSimCaptchaForm}>
-                  <Captcha inputLabel="Güvenlik kodu"/>
+                  <Captcha
+                    inputLabel="Güvenlik kodu"
+                    isLoading={isLoading}
+                    refreshCaptcha={() => {
+                      getCaptchaa();
+                    }}
+                    onClick={handleFormSubmitSC}
+                    style={{border: '2px solid red'}}
+                    captcha={{
+                      identifier: captchaResponse.identifier,
+                      sound: captchaResponse.sound,
+                      image: captchaResponse.image
+                    }}
+                  />
+
                 </div>
               </div>
             ) : (
@@ -311,7 +416,19 @@ const PukCodePagesPrivate = () => {
                     </div>
                   </div>
                   <div className={styles.pukCodePageTcCaptchaForm}>
-                    <Captcha inputLabel="Güvenlik kodu"/>
+                    <Captcha
+                      inputLabel="Güvenlik kodu"
+                      isLoading={isLoading}
+                      refreshCaptcha={() => {
+                        getCaptchaa();
+                      }}
+                      style={{border: '2px solid red'}}
+                      captcha={{
+                        identifier: captchaResponse.identifier,
+                        sound: captchaResponse.sound,
+                        image: captchaResponse.image
+                      }}
+                    />
                   </div>
 
                 </div>
