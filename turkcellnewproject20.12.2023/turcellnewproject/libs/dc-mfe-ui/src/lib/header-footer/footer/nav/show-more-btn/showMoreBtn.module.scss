@@ -1,0 +1,24 @@
+.trkcllAppShowMoreBtn {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: underline;
+  text-align: start;
+  padding: 0;
+  padding-top: 1.625rem;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+
+  .trkcllAppDownIcon {
+    transform: rotate(-90deg);
+    transition: all 0.3s ease;
+    &.collapsable {
+      transform: rotate(-270deg);
+    }
+  }
+}

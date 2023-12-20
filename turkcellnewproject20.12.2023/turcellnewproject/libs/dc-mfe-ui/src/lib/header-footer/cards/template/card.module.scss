@@ -1,0 +1,8 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkclAppCard {
+  border-radius: 0.625rem !important;
+  box-shadow: 0 2px 0.375rem 0 rgba(37, 51, 66, 0.09);
+  outline: 2px solid transparent;
+  cursor: pointer;
+}

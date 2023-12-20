@@ -1,0 +1,16 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkcllAppDivider {
+  border-width: 2px;
+  border-color: $white;
+  color: $white;
+  opacity: 0.1;
+  margin: 0;
+}
+
+.trkcllAppMobileContentPadding {
+  padding: 1.5625rem 1rem;
+}
+.trkcllAppHideElement {
+  display: none;
+}

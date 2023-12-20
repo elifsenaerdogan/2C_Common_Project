@@ -1,0 +1,44 @@
+@import '@others/assets/styles/variables.scss';
+
+.m-card-extra-info {
+    border: 1px solid #8e9fad;
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+
+    &--vertical {
+        border: none
+    }
+
+    &__img-wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-right: .9rem;
+    }
+
+    &__image {
+        object-fit: contain;
+        &--mobile {
+            margin-right: 1rem;
+        }
+    }
+
+    &__title {
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 1.5;
+        margin-bottom: .3rem;
+    }
+
+    &__text {
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: $slate-grey;
+        line-height: 1.33;
+    }
+
+    &__divider {
+        height: 3rem;
+    }
+}

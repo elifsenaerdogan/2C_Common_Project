@@ -1,0 +1,35 @@
+@import '@others/assets/styles/variables.scss';
+.m-trkclAppRadioButton {
+  &__creditCart {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    &--checked {
+      color: $dark;
+    }
+  }
+
+  &__action {
+    &--name {
+      font-size: 0.75rem;
+      font-weight: 500;
+      margin-bottom: 2px;
+      font-stretch: normal;
+      line-height: normal;
+      &-checked {
+        color: $primary-100;
+      }
+    }
+    &--priceCurrency {
+      display: flex;
+      &-checked {
+        color: $black;
+      }
+      &-price {
+        font-size: 1rem;
+      }
+      &-currency {
+        font-size: 0.6875rem;
+      }
+    }
+  }
+}

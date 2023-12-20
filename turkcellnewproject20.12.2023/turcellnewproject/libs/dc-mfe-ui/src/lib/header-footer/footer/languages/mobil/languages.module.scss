@@ -1,0 +1,21 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkcllAppwrapper {
+  .trkcllAppmobileContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: inherit;
+    }
+    .trkcllAppFlexContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .trkcllAppArrowDown {
+        margin-left: 12px;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}

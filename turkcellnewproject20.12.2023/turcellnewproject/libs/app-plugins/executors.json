@@ -1,0 +1,9 @@
+{
+  "executors": {
+    "runWithShell": {
+      "implementation": "./src/executors/run-with-shell/executor",
+      "schema": "./src/executors/run-with-shell/schema.json",
+      "description": "runWithShell executor"
+    }
+  }
+}

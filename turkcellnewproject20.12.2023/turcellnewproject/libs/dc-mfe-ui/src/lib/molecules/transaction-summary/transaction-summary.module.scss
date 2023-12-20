@@ -1,0 +1,308 @@
+@import '@others/assets/styles/variables.scss';
+
+.m-trkclTransaction {
+  padding: 2.5rem 14.375rem 8.063rem 14.375rem;
+  background-color: $white;
+
+  &__parentDiv {
+    display: flex;
+  }
+  &__agreement {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: $dark !important;
+  }
+  &__checkboxDiv {
+    margin-right: 1.25rem;
+  }
+  &__checkboxStyle {
+    margin-bottom: 1.25rem !important;
+    color: $slate-grey !important;
+    :global(.ant-checkbox) {
+      & span {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-color: $lines;
+      }
+    }
+    & + span {
+      padding-inline-start: 0.9375rem;
+      padding-inline-end: 0;
+      color: $slate-grey !important;
+      letter-spacing: normal;
+    }
+    :global(.ant-checkbox-checked) {
+      & div {
+        display: none;
+      }
+
+      & span {
+        background-color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::after {
+          content: url('../../../others/assets/images/check.svg');
+          transform: none;
+          transition: none;
+          border: none !important;
+          position: unset;
+        }
+      }
+
+      & + span {
+        color: $dark !important;
+        font-weight: 700;
+      }
+    }
+    &:hover {
+      :global(.ant-checkbox) {
+        & span {
+          border-color: $lines !important ;
+        }
+      }
+
+      :global(.ant-checkbox-checked) {
+        & span {
+          background-color: $white !important;
+        }
+
+        & + span {
+          color: $dark !important;
+          font-weight: 700;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      line-height: 0.5 !important;
+    }
+  }
+  &__firstSpan {
+    color: $primary-100 !important;
+    font-size: 0.875rem !important;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    @media (max-width: 768px) {
+      font-size: 0.75rem !important;
+      font-weight: 600 !important;
+      font-stretch: normal !important;
+      font-style: normal !important;
+      letter-spacing: normal !important;
+    }
+  }
+  &__nextSpan {
+    color: $slate-grey !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    @media (max-width: 768px) {
+      font-size: 0.75rem !important;
+      font-weight: 500 !important;
+      font-stretch: normal !important;
+      font-style: normal !important;
+      letter-spacing: normal !important;
+    }
+  }
+  &__transactionSummaryDiv {
+    border-radius: 0.625rem;
+    border: solid 0.063rem $border;
+    box-shadow: 0 0.375rem 0.75rem -0.25rem $dark-alternative;
+    background-color: $grey-alternative;
+    min-width: 23.75rem;
+    max-height: 23.25rem;
+  }
+  &__transactionTitle {
+    font-size: 1.313rem !important;
+    color: $dark !important;
+    padding: 1.25rem 0 1.25rem 1.25rem;
+  }
+  &__transactionDetail {
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 0 1.25rem 1.25rem 1.25rem;
+    color: $dark !important;
+  }
+  &__btnClasses {
+    padding: 0.438rem 7.063rem 0.563rem 7.063rem !important;
+    background-color: $secondary !important;
+    color: $dark !important;
+    border: none !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    line-height: 1.5 !important;
+    font-family: 'GreycliffCF Normal', Helvetica, sans-serif !important;
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-top: 3.875rem;
+    }
+    div {
+      @media (max-width: 768px) {
+        white-space: pre !important;
+      }
+    }
+  }
+  &__btnClasses:hover {
+    background-color: $secondary !important;
+    color: $dark !important;
+    border: none !important;
+  }
+  &__modal {
+    :global(.ant-modal-content) {
+      padding: 3.75rem 1.25rem 2.188rem 1.25rem !important;
+      width: 30.5rem !important;
+    }
+    :global(.ant-modal-body) {
+      margin: 0.75rem 0.313rem 2.813rem 0;
+      padding: 0.875rem 1.313rem 0.813rem 1rem;
+      object-fit: contain;
+      border-radius: 0.625rem;
+      border: solid 0.063rem $lines;
+      background-color: $white;
+      p {
+        margin: 0 !important;
+        font-size: 0.75rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        font-family: 'GreycliffCF Normal', Helvetica, sans-serif;
+        color: $bluey-grey;
+        max-height: 11.438rem !important;
+        overflow: auto;
+        &::-webkit-scrollbar {
+          width: 0.188rem;
+          background-color: $lines;
+          border-radius: 0.219rem;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: $slate-grey;
+          border-radius: 0.219rem;
+          margin-left: 0.625rem;
+        }
+      }
+    }
+    :global(.ant-modal-title) {
+      height: 3rem;
+      text-align: center;
+      font-size: 1.125rem !important;
+      font-weight: bold !important;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      text-align: center;
+      font-family: 'GreycliffCF Normal', Helvetica, sans-serif;
+      color: $dark;
+    }
+    :global(.ant-modal-footer) {
+      text-align: center !important;
+    }
+  }
+  &__modalBtn {
+    padding: 0.438rem 5.25rem 0.563rem 5.25rem !important;
+    font-family: 'GreycliffCF Normal', Helvetica, sans-serif !important;
+    background-color: $secondary !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: 1.5 !important;
+    letter-spacing: normal !important;
+    text-align: center !important;
+    color: $dark !important;
+    border: none !important;
+    @media (max-width: 768px) {
+      margin: 1rem !important;
+      span {
+        text-align: center !important;
+      }
+    }
+  }
+  &__modalBtn:hover {
+    background-color: $secondary !important;
+    color: $dark !important;
+    border: none !important;
+  }
+}
+.m-trkclTransactionMobile {
+  position: relative;
+  width: 100%;
+  > div:first-child {
+    background-color: $white;
+    padding: 1rem;
+  }
+
+  > div:nth-child(2) {
+    background-color: $bg-grey;
+    padding: 1.25rem 1rem;
+  }
+  &__parentMobileDiv {
+    box-shadow: 0 0 0.125rem 0 $dark-20,
+      0 0.188rem 0.063rem -0.125rem $dark-alternative,
+      0 0.125rem 0.125rem 0 $dark-alternative !important;
+  }
+  &__line {
+    width: 100%;
+    margin: 1rem 0.188rem 0.75rem 0;
+    opacity: 0.8;
+    border: solid 0.063rem $lines;
+  }
+  &__detailMobileMargin {
+    margin-bottom: 1rem;
+  }
+  &__titleMobile {
+    color: $bluey-grey;
+  }
+  &__textMobile {
+    color: $dark;
+  }
+  &__modalMobile {
+    position: absolute;
+    left: 0;
+    top: 4rem;
+    width: 100%;
+    background-color: $white;
+    padding: 3.813rem 1.25rem 0 1.25rem;
+    height: 100%;
+    text-align: center;
+    &--close {
+      position: absolute;
+      right: 1rem;
+      top: 1.25rem;
+      cursor: pointer;
+    }
+    &--title {
+      margin-bottom: 1.25rem;
+      font-size: 1.75rem;
+      font-weight: bold !important;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.29;
+      letter-spacing: normal;
+      text-align: center;
+      font-family: 'GreycliffCF Normal', Helvetica, sans-serif;
+    }
+    p {
+      margin: 0;
+      height: 28.188rem;
+      overflow: auto;
+      font-size: 1rem;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.25;
+      letter-spacing: normal;
+      text-align: center;
+      color: $bluey-grey;
+    }
+  }
+}
