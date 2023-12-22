@@ -1,0 +1,23 @@
+@import '@others/assets/styles/variables.scss';
+
+.a-trkclInfoBox {
+  width: 85px;
+  padding: 10px 12px 7px 12px;
+  margin: 0 15px 0 0;
+  border-radius: 10px;
+  border: solid 1px $lines;
+  background-color: $white;
+  cursor: pointer;
+  margin-top: 5px;
+
+  &__infoText {
+    text-align: center;
+    margin-top: 7px;
+    color: $slate-grey;
+  }
+
+  &__imgDiv {
+    display: flex;
+    justify-content: center;
+  }
+}

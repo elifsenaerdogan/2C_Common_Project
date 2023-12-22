@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "allowJs": false,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "types": ["vitest"],
+    "paths": {
+      "@others/*": ["libs/dc-mfe-ui/src/others/*"],
+      "@atoms": ["libs/dc-mfe-ui/src/lib/atoms"],
+      "@molecules": ["libs/dc-mfe-ui/src/lib/molecules"],
+      "@atoms/*": ["libs/dc-mfe-ui/src/lib/atoms/*"]
+    }
+  },
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./tsconfig.lib.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./tsconfig.storybook.json"
+    }
+  ],
+  "extends": "../../tsconfig.base.json"
+}

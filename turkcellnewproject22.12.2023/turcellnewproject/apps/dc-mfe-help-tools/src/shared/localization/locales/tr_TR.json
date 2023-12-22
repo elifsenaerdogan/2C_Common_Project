@@ -1,0 +1,36 @@
+{
+  "yardim-araclari": "Yardim Araçları",
+  "puk-kodu-ogrenme": "Puk Kodu Öğrenme",
+  "fatura-sorgulama": "Fatura Borç Sorgulama Ve Ödeme",
+  "cihaz": "Cihaz Ayar Gönderimi",
+  "alacak-sorgulama": "Alacak Sorgulama",
+  "hat-sorgulama": "Bireysel Hat Sorgulama",
+  "puk-kodu-ogrenme-metin": "Puk kodu bilgilerinizi aşağıdaki adımları kullanarak anında öğrenebilirsiniz.",
+  "iletisim-no": "İletişim No* (başında 0 olmadan)",
+  "dogum-tarihi":"Doğum Tarihi",
+  "simcard-no": "Sim Kart No",
+  "simcard": "Sim kartınız üzerinde yandaki resimde gösterilen numarayı girmelisiniz.",
+  "tcno": "TC Kimlik Numarası",
+  "tc":"Hat sahibinin TC Kimlik Numarasının girilmesi gerekiyor.",
+  "security-code": "Güvenlik Kodu",
+  "submit": "Gönder",
+  "with-simcardno": "Sim Kart Numarası İle",
+  "with-simcardno-info": "Sim kart numaranızı girerek sorgu yapabilirsiniz",
+  "with-tcno": "T.C Kimlik Numarası İle",
+  "with-tcno-info": "Tckn bilgileriniz ile sorgu yapabilirsiniz",
+  "captchanot": "Güvenlik kodundaki harf ve rakamları giriniz.",
+  "alacakSorgulama-title1": "Alacak Sorgulama /TL İade Talep",
+  "alacakSorgulama-title2": "Aşağıda belirtilen durumlarda hatlarınızla ilgili sorgulama yapıp, iade talebinde bulunabilirsiniz",
+  "alacakSorgulama-title3": "  Turkcell ön ödemeli hattınız kapatıldıktan sonra kalan TL talebi.",
+  "alacakSorgulama-title4": "  Ön ödemeli hattınızdan farklı operatöre geçtikten sonra kalan TL talebi.",
+  "alacakSorgulama-title5": "  Turkcell hattınızla ilgili ücretlendirme sonrası düzeltmeler sebebiyle veya BTK kararı doğrultusunda yapılan iade talebi.",
+  "bireysel": "Bireysel",
+  "kurumsal": "Kurumsal"
+
+
+
+
+
+
+
+}

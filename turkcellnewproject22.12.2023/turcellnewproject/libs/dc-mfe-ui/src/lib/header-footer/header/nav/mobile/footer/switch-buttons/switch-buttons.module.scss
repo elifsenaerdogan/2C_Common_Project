@@ -1,0 +1,22 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkclAppSwitchButtonContainer {
+  display: flex;
+  border-radius: 1.75rem;
+  padding: 0.5rem;
+  background-color: $shade;
+
+  &__button {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    background-color: $shade;
+    padding: 0.375rem 3.25rem;
+    border-radius: 1.75rem;
+    cursor: pointer;
+
+    &--active {
+      background-color: $white;
+    }
+  }
+}

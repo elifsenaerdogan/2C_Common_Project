@@ -1,0 +1,29 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkclAppCampaignCardWrapper {
+  & .trkclAppCampaignCardHeader {
+    border-bottom-left-radius: 100% 1.5625rem;
+    border-bottom-right-radius: 100% 1.5625rem;
+    overflow: hidden;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 13.25rem;
+  }
+
+  & .trkclAppCampaignCardBody {
+    padding: 1.25rem 1.25rem 0;
+
+    & p,
+    & h3 {
+      margin-top: 0;
+    }
+
+    & .trkclAppCampaignCardTitle {
+      line-height: 1.2;
+    }
+  }
+}

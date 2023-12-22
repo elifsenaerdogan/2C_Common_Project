@@ -1,0 +1,32 @@
+@import '@others/assets/styles/variables.scss';
+
+.a-trkclApp-checkbox {
+  display: flex;
+  align-items: center;
+  &__checkbox {
+    padding: 0.375rem 0;
+
+    &--registration {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      &-text {
+        color: $slate-grey;
+      }
+      &-terms {
+        color: $primary-100;
+        cursor: pointer;
+      }
+      &-image {
+        margin: 0 0.5rem;
+        padding-top: 0.3rem;
+        }
+    }
+  }
+  &__block {
+    label {
+      display: block;
+    }
+  }
+}
