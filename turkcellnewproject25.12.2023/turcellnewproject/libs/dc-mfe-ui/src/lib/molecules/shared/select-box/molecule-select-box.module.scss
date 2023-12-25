@@ -1,0 +1,154 @@
+@import '@others/assets/styles/variables.scss';
+.m-trkclApp-selectBox {
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  height: 56px;
+
+  :global(.ant-select-selector) {
+    border-radius: 0.5rem !important;
+    border: solid 1px $lines !important;
+    width: 100% !important;
+    height: 100% !important;
+    box-shadow: none !important;
+    align-items: center;
+    position: relative;
+  }
+
+  :global(.ant-select-arrow) {
+    content: url('../../../../others/assets/images/icons-arrow-large.svg');
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 40%;
+  }
+  :global(.ant-select-selection-item) {
+    padding-inline-end: 0px !important;
+  }
+  :global(.ant-select-selection-item) {
+    color: $dark !important;
+    font-size: 1rem !important;
+    padding-top: 1.1rem !important;
+  }
+  &:hover {
+    :global(.ant-select-selector) {
+      border: solid 1px $bluey-grey !important;
+    }
+  }
+
+  &__dropdownDisabled {
+    opacity: 0.4;
+    &:hover {
+      :global(.ant-select-selector) {
+        border-color: $lines !important;
+      }
+    }
+  }
+
+  &__dropdownError {
+    :global(.ant-select-selector) {
+      border-color: $form-error-color !important;
+    }
+    :global(.ant-select-selection-item) {
+      color: $form-error-color !important;
+    }
+  }
+  &__dropdownSuccess {
+    :global(.ant-select-selector) {
+      border-color: $success !important;
+    }
+  }
+
+  &:global(.ant-select-open) {
+    :global(.ant-select-selector) {
+      background-color: $white;
+      border-radius: 0.5rem 0.5rem 0px 0px !important;
+    }
+
+    &:global(.ant-select-focused) {
+      :global(.ant-select-selector) {
+        border-color: none !important;
+        box-shadow: 0 0 0.5rem -0.125rem rgba(0, 0, 0, 0.5) !important;
+      }
+    }
+  }
+
+  &__defaultValue {
+    position: absolute;
+    top: 0.4rem;
+    left: 0.8rem;
+    color: $bluey-grey;
+  }
+}
+
+.m-trkclApp-selectWrapper {
+  position: relative;
+
+  &__popupWrapper {
+    padding: 0px;
+    border-radius: 0px 0px 0.5rem 0.5rem;
+    background-color: $white;
+    overflow: visible;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -2.5rem;
+      z-index: -1;
+      height: calc(100% + 2.5rem);
+      background-color: transparent;
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+
+    :global(.ant-select-item-option-selected) {
+      background-color: transparent !important;
+      :global(.ant-select-item-option-content) {
+        font-family: 'GreycliffCF Bold', Helvetica, sans-serif;
+        font-weight: bold !important;
+        font-size: 1rem !important;
+      }
+    }
+    :global(.ant-select-item-option-active) {
+      background-color: transparent !important;
+
+      &:hover {
+        font-weight: bold !important;
+      }
+    }
+  }
+
+  &__errorMessage {
+    width: fit-content;
+    color: $form-error-color;
+  }
+}
+
+.a-trkclAppInputFloatLabel {
+  position: relative;
+
+  &__disabled {
+    opacity: 0.4;
+  }
+}
+
+.a-trkclAppInputLabel {
+  position: absolute;
+  pointer-events: none;
+  left: 1rem;
+  top: 1.1rem;
+  font-size: 1rem;
+  color: $slate-grey;
+  z-index: 999;
+  transition: 0.2s ease all;
+
+  &__float {
+    position: absolute;
+
+    top: 0.563rem;
+    left: 0.8rem;
+    font-size: 0.8rem;
+    color: $bluey-grey;
+    z-index: 998;
+    transition: 0.2s ease all;
+  }
+}
