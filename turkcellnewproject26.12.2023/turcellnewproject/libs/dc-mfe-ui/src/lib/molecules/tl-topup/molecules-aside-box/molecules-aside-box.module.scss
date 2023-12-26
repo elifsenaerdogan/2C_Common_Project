@@ -1,0 +1,29 @@
+@import '@others/assets/styles/variables.scss';
+
+.m-aside-box {
+  max-width: 48.813rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 1.188rem 1.25rem 1.125rem;
+  box-shadow: 0 0.375rem 0.75rem -0.25rem $dark-20;
+  border: solid 1px #d4d4d4;
+  background-color: $grey-alternative;
+  border-radius: .5rem;
+  margin: 1.3rem 0;
+
+  &__text {
+    margin: 0 1.313rem 0 0.5rem;
+    color: $slate-grey;
+  }
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+
+    &__text {
+      margin: 0.5rem 0;
+      color: $slate-grey;
+    }
+  }
+}

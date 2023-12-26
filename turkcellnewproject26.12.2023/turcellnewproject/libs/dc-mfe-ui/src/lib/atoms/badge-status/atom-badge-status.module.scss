@@ -1,0 +1,35 @@
+@import '@others/assets/styles/variables.scss';
+
+.a-trkclApp-badge-status {
+  display: inline-flex;
+  align-items: center;
+  border-top-left-radius: 0.5625rem;
+  border-bottom-right-radius: 0.5625rem;
+  color: $white;
+  padding: 0 0.375rem;
+  height: 1.625rem;
+
+  span {
+    line-height: 1;
+    margin-left: 0.3125rem;
+  }
+  &__text {
+    margin-bottom: 2px;
+  }
+  &--success {
+    background-color: $success;
+  }
+  &--wait {
+    background-color: $secondary;
+    color: $dark;
+  }
+  &--cancel {
+    background-color: $bluey-grey;
+
+    i {
+      &:before {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkclAppNavProfileAvatar {
+  background-color: $dark-20;
+  display: flex;
+  align-items: center;
+  padding: 0.125rem 0.25rem;
+  border-radius: 1.125rem;
+
+  &__avatar {
+  }
+
+  &__userInfo {
+    margin-left: 0.25rem;
+    &--icon {
+      height: 1.25rem;
+      margin-left: 0.75rem;
+    }
+  }
+}

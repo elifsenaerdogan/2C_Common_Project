@@ -1,0 +1,22 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkclAppBreadCrumbWrapper {
+  a {
+    height: min-content;
+    font-size: 0.75rem;
+    line-height: 1;
+    color: $white;
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+
+  :global(.ant-breadcrumb-separator) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      margin-bottom: -2px;
+    }
+  }
+}
