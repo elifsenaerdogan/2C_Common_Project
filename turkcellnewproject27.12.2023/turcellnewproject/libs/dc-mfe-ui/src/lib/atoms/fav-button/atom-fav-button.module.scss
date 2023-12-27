@@ -1,0 +1,16 @@
+@import '@others/assets/styles/variables.scss';
+.a-fav-button {
+  color: $secondary;
+  svg {
+    height: 2.25rem;
+    width: 2rem;
+  }
+  &__passive {
+    svg {
+      transform: rotateZ(-45deg);
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

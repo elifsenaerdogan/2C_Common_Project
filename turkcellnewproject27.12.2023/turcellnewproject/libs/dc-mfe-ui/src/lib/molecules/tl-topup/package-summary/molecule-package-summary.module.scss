@@ -1,0 +1,40 @@
+@import '@others/assets/styles/variables.scss';
+
+.m-trkclApp-package-summary {
+  background-color: $grey-alternative;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px -4px $dark-20;
+  border: solid 1px #dce1e6;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5rem 3.125rem;
+  width: 100%;
+
+
+  @media (max-width: 768px) {
+    height: 9.438rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid $lines;
+    padding: 1.125rem 1rem;
+  }
+
+  &__title {
+    color: $bluey-grey;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.14;
+  }
+
+  &__desc {
+    color: $dark;
+    font-size: 1.125rem;
+    line-height: 1.22;
+    font-family: "GreycliffCF Bold", Helvetica, sans-serif;
+  }
+}

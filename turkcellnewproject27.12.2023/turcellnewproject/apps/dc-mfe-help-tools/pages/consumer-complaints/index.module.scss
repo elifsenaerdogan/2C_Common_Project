@@ -1,0 +1,318 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkclAppPagePuk{
+  margin-top: 2%;
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 3fr;
+  gap: 1.25rem;
+  margin-left: 10%;
+}
+
+
+.trkclAppPagePukContentTitle{
+  display: grid;
+  min-height: 5.6875rem;
+  margin-top: 1.5625rem;
+}
+
+.trkclAppPagePukContentFirstLabel, .trkclAppPagePukContentSecondLabel,.trkclAppPageConsumerComplaintsContentLabelLogin {
+  margin: 0;
+}
+
+
+
+.trkclAppPagePukContentChoice{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  margin-top: 1.50rem;
+}
+
+.trkclAppPageConsumerComplaintsContentButtonLogin{
+  width: 237px;
+}
+
+.trkclAppPageConsumerComplaintsContentButtonComplaints{
+  width: 290px;
+}
+
+.trkclAppPagePukContentChoiceRadioButton{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 3rem;
+  width: 200%;
+}
+
+.trkclAppPagePukContentChoiceRadioButtonUnSelected{
+  width: 2rem;
+  height: 1.5rem;
+}
+
+.trkclAppPagePukContentChoiceRadioButtonSelected{
+  color: $primary-100 !important;
+  width: 2rem;
+  height: 1.5rem;
+}
+
+.trkclAppPagePukContentChoiceRadioButtonTitle{
+  margin-left: 2%;
+  width: 100%;
+}
+
+
+
+.trkclAppPagePukContentChoiceLabelSelected{
+  color: $primary-100;
+  margin-bottom:-0.5rem;
+}
+
+
+
+.trkclAppPagePukContentLabelRadio{
+  margin-bottom:-0.5rem;
+}
+
+
+.trkclAppPagePukContentWithSimCard{
+
+}
+
+
+.trkclAppPagePukContentWithSimCardFirstScrow{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:3%;
+  margin-top: 2%;
+}
+
+.trkclAppPagePukContentWithSimCardInputSimCard{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap:2%
+}
+
+.trkclAppPagePukContentInput{
+
+}
+
+.trkclAppPagePukContentInputDate{
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+
+}
+
+
+.trkclAppPagePukContentWithTCNoThirdRow{
+  margin-top: 2%;
+}
+
+.trkclAppPagePukContentWithSimCardSecondScrow{
+  margin-top: 2%;
+}
+
+.trkclAppPagePukContentWithSimCardThirdScrow{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top:0.5rem;
+  gap:3%;
+}
+
+
+.trkclAppPagePukContentWithSimCardLabel{
+  color:$bluey-grey;
+  margin: 0;
+}
+
+.trkclAppPagePukContentWithTCNoLabel{
+  color:$bluey-grey;
+  margin: 1%;
+}
+
+
+
+.trkclAppPagePukContentWithTCNoFirstRow{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:3%;
+  margin-top: 2%;
+}
+
+
+.trkclAppPagePukContentWithTCNoSecondRow{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  gap:3%;
+
+}
+
+
+.trkclAppPagePukContentWithTCNoFourthRow{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  gap:3%;
+  margin-top: 2%;
+}
+
+
+
+.trkclAppPagePukContentWithSimCardButton {
+  width:100%;
+  margin-top: 10%;
+  height:2rem !important;
+}
+
+.trkclAppPagePukErrorsMessages{
+  margin: 0;
+  color: $error;
+}
+
+
+.trkclAppPagePukContentResponse{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:0;
+  margin-top: 1.25rem;
+  width: 10rem;
+  margin-left:0.5rem;
+}
+
+
+.trkclAppPagePukResponseTitle{
+  display: grid;
+  min-height: 5.6875rem;
+  margin-top: 0.6rem;
+  margin-left: 1%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .trkclAppPagePuk {
+    margin-top: -40rem;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-left: 0;
+
+  }
+
+
+  .trkclAppPagePukContentTitle{
+    margin-left: 5%;
+  }
+
+  .trkclAppPagePukContentSecondLabel{
+    margin-top: 2%;
+  }
+
+  .trkclAppPageConsumerComplaintsContentLabelLogin{
+    margin-top: 2%;
+  }
+
+  .trkclAppPagePukContentChoice{
+    margin-top:5%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 1.25rem;
+    margin-left: 5%;
+  }
+
+  .trkclAppPagePukContentWithSimCardFirstScrow{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 1.25rem;
+    gap:1.25rem;
+  }
+
+  .trkclAppPagePukContentWithTCNoThirdRow{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 2rem;
+    gap:1.25rem;
+  }
+
+  .trkclAppPagePukContentWithSimCardSecondScrow{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top:1.25rem;
+    gap:1.25rem;
+  }
+  .trkclAppPagePukContentWithSimCardThirdScrow{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 1.25rem;
+    gap:1.25rem;
+
+  }
+
+  .trkclAppPagePukContentInput{
+    width: 95%;
+    height:4rem;
+  }
+
+  .trkclAppPagePukContentChoiceRadioButton{
+    height: 3.5rem;
+  }
+
+  .trkclAppPagePukContentWithTCNoFirstRow{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 1.25rem;
+    gap:1.25rem;
+  }
+
+
+
+  .trkclAppPagePukContentWithTCNoSecondRow{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    gap:1.25rem;
+    margin-top:2rem ;
+  }
+
+
+
+  .trkclAppPagePukContentWithTCNoFourthRow{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top:1.25rem;
+    gap:1.25rem;
+  }
+
+
+  .trkclAppPagePukContentWithSimCardButton {
+    margin-top: 0;
+    width:95%;
+  }
+
+  .trkclAppPagePukContentWithTCNoButton{
+    margin-top: 0;
+    width:95%;
+  }
+
+  .trkclAppPagePukContentInputDate{
+    width: 95% !important;
+  }
+
+  .trkclAppPagePukContentChoiceRadioButtonUnSelected{
+    color: black;
+    width: 2rem;
+    height: 1.5rem;
+  }
+
+  .trkclAppPageConsumerComplaintsContentButtonLogin{
+    width: 100%;
+  }
+
+
+
+}

@@ -1,0 +1,10 @@
+.m-trkclApp-savedCard {
+  label:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+//storybook classes
+.storybook__comprhansive {
+  width: 100%;
+}

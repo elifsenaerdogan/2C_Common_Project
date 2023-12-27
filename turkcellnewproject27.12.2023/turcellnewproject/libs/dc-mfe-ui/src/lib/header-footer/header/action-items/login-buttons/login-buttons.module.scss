@@ -1,0 +1,31 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkclAppLoginButtons {
+  &__web {
+    background-color: $secondary;
+    border: none;
+    color: $dark !important;
+    padding: 0.125rem 0.625rem;
+    border-radius: 0.75rem;
+
+    > div {
+      white-space: nowrap;
+    }
+  }
+
+  &__mobile {
+    display: flex;
+    svg {
+      color: $white;
+      &:hover {
+        color: $secondary;
+      }
+    }
+
+    &--active {
+      svg {
+        color: $secondary;
+      }
+    }
+  }
+}
