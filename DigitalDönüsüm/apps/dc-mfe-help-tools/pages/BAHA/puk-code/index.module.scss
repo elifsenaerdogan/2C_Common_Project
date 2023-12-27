@@ -12,7 +12,17 @@
   display: grid;
   grid-template-columns: 3fr 2fr 1fr ;
 }
-.simCardNoRadioButton{
+.simCardRadioButton{
+display: flex;
+  flex-direction: column;
+
+
+
+
+}
+.simCardRadioButtonLabel{
   display: flex;
   flex-direction: column;
+  margin-left: 1rem;
+  gap:-6rem;
 }

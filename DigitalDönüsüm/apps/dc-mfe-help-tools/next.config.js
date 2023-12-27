@@ -38,6 +38,7 @@ const nextConfig = {
         'http://dc-help-service-develop-digitalchannels.apps.tocpt2.tcs.turkcell.tgc/sim-card-management/sim-cards/:path*',
       },
 
+
     ];
   },
   nx: {

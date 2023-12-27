@@ -21,6 +21,7 @@ import * as url from "url";
 import Captcha from "../../../../libs/dc-mfe-ui/src/lib/molecules/captcha/captcha";
 
 
+
 const PukKoduSorgulama = () => {
 
   const [isLoading, setIsLoading] = useState(false);
@@ -595,6 +596,7 @@ const PukKoduSorgulama = () => {
                             onFocus={handleFocus}
                             onChange={(event) => handleInputChangeTel(event, setgsmno)}
                             statusType={(formErrors.gsmno || validationErrorsTC.gsmno) ? 'error' : undefined}/>
+
 
                         </div>
                         <div className={styles.trkclAppPagePukContentInput}>
