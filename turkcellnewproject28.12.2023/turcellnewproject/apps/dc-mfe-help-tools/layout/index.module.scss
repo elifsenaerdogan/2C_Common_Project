@@ -1,0 +1,225 @@
+@import '@others/assets/styles/variables.scss';
+.pukCodePage{
+
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 3fr;
+  gap: 1.25rem;
+  margin-left: 10%;
+}
+
+.pukCodePageP{
+  width: 100%;
+
+}
+
+.pukCodePageTc{
+  margin-left: 2%;
+  width: 100%;
+}
+
+.pukCodePagePText{
+  font-weight: bold;
+}
+.pukCodePageAtomRadioButtons{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 2rem;
+  margin-top: 5%;
+
+}
+.pukCodePagePt{
+  margin-top: 2%;
+}
+.pukCodePageSimIconText{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+}
+.pukCodePageIcon{
+
+
+}
+.pukCodePageSim{
+  margin-left: 2%;
+  width: 100%;
+
+}
+
+
+
+
+.pukCodePageTcIconText{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+}
+.pukCodePageTc{
+  margin-left: 2%;
+  width: 100%;
+
+}
+.RadioButtonSimSelected {
+  color: $primary-100 !important;
+  width: 2rem;
+  height: 1.5rem;
+
+}
+.RadioButtonSimUnSelected{
+  width: 2rem;
+  height: 1.5rem;
+}
+
+.RadioButtonTcSelected {
+  color: $primary-100 !important;
+
+}
+
+.pukCodePageSimISelected {
+  color: $primary-100;
+  margin-bottom:-0.5rem;
+
+
+}
+.trkclAppPagePukContentLabelRadio{
+  margin-bottom:-0.5rem;
+
+}
+
+.pukCodePageTcISelected {
+  color: $primary-100;
+  margin-bottom:-0.5rem;
+
+
+
+
+}
+.pukCodePageSimIISelected{
+  margin-top: 5%;
+}
+.pukCodePageTcIISelected{
+  margin-top: 5%;
+
+}
+.trkcellpukCodePageWriteI{
+  margin: 0;
+  font-weight: bold;
+  font-size: 2vw;
+
+}
+.trkcellpukCodePageWriteII{
+  margin: 0;
+}
+.pukCodePageWritesIII{
+  display: grid;
+  min-height: 5.6875rem;
+  margin-top: 1.5625rem;
+  margin-left: 2rem;
+}
+.pukCodeContentInputs{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3%;
+  margin-top: 3%;
+}
+.pukCodeContentInputsSimCardPhoto{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap:2%
+}
+.pukCodeContentInputsSimCardWrite{
+  color:$bluey-grey;
+  margin: 0;
+  font-size: 1vw;
+}
+.pukCodePageSimCaptchaForm{
+  margin-top: 2%;
+}
+.pukCodePageTcForm{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:3%;
+  margin-top: 3%;
+}
+.pukCodePageTcFormLabel{
+  color:$bluey-grey;
+  margin: 1%;
+}
+.pukCodePageTcDate{
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+}
+.pukCodePageTcCaptchaForm{
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .pukCodePage{
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-left: 0;
+  }
+  .pukCodePageWritesIII{
+    margin-left: 5%;
+    margin-top: -25rem;
+  }
+  .pukCodePageSimAtomInput{
+    width: 85%;
+    height:4rem;
+  }
+  .pukCodePageWriteII{
+    margin-top: 2%;
+  }
+  .pukCodePageAtomRadioButtons{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 1.25rem;
+    margin-left: 5%;
+
+  }
+  .pukCodeContentInputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.25rem;
+    gap:1.25rem;
+  }
+
+  .pukCodePageSimCaptchaForm{
+    display: flex;
+    flex-direction: column;
+    margin-top:1.25rem;
+    gap:1.25rem;
+    width: 85%;
+  }
+  .pukCodePageTcForm{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 1.25rem;
+    gap:1.25rem;
+  }
+  .pukCodePageTcAtomInput{
+    width: 85%;
+    height:4rem;
+  }
+  .pukCodePageTcDate{
+    width: 85%;
+    height:4rem;
+  }
+  .pukCodePageTcCaptchaForm{
+    display: flex;
+    flex-direction: column;
+    margin-top:1.25rem;
+    gap:1.25rem;
+    width: 85%;
+  }
+
+}

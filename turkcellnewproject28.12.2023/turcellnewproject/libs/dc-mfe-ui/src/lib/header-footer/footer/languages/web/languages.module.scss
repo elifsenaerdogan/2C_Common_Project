@@ -1,0 +1,39 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkcllAppWrapper {
+  .trkcllAppWebMenu {
+    margin-left: -1rem;
+    border-bottom: 1px solid transparent;
+    min-width: 25rem;
+    width: fit-content;
+    background-color: transparent;
+    color: $white;
+    line-height: 2.875rem;
+
+    li[data-menu-id] {
+      color: $white !important;
+      opacity: 0.5 !important;
+    }
+    li[data-menu-id]:hover {
+      opacity: 1 !important;
+    }
+
+    li[data-menu-id]:hover::after {
+      border-bottom-color: $white !important;
+    }
+
+    :global(.ant-menu-item-selected[data-menu-id]) {
+      opacity: 1 !important;
+      &::after {
+        border-bottom-color: $white !important;
+      }
+    }
+
+    :global(.ant-menu-item-selected) {
+      color: white !important;
+      &::after {
+        border-bottom-color: $white !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import '@others/assets/styles/variables.scss';
+.loginStep {
+  &__container {
+    width: 36.25rem;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    &--content {
+      @media (max-width: 768px) {
+        padding: 0 1rem 0 1rem;
+      }
+      &-inputContent {
+        margin-top: 2rem;
+        &-title {
+          color: $dark;
+        }
+        &-wrapper {
+          position: relative;
+          &-changeButton {
+            position: absolute;
+            right: 3rem;
+            top: 1rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            cursor: pointer;
+          }
+        }
+        &-input {
+          height: 3.5rem;
+          padding: 1.375rem 3.75rem 0.625rem 1rem;
+          &-icon {
+            color: $primary-100;
+          }
+        }
+        & > div {
+          margin-top: 1rem;
+        }
+      }
+      &-securtiyArea {
+        &-modal {
+          :global(.ant-modal-content) {
+            padding: 3rem 2.5rem;
+            width: 100%;
+            text-align: center;
+          }
+        }
+        &-modalButton {
+          width: 100%;
+          border-radius: 1.875rem !important;
+        }
+        &-background {
+          background-color: rgba(0, 0, 0, 0.5) !important;
+          box-shadow: none !important;
+        }
+      }
+    }
+  }
+}

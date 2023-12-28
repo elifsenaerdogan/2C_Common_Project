@@ -1,0 +1,110 @@
+@import '@others/assets/styles/variables.scss';
+
+.m-credit-card {
+    perspective: 31.25rem;
+    border: none;
+    position: block;
+
+    &__content {
+        width: 23.75rem;
+        height: 12.188rem;
+        box-shadow: 0 0.375rem 0.75rem -0.25rem $dark;
+        border-radius: 0.625rem;
+        background: rgba(95, 107, 118, 0.4) radial-gradient(circle at 0 215px, rgba(37, 51, 66, 0.08) 30%, rgba(37, 51, 66, 0.05) 30%, rgba(37, 51, 66, 0.05) 45%, rgba(37, 51, 66, 0.03) 45%, rgba(37, 51, 66, 0.03) 60%, rgba(0, 0, 0, 0) 60%);
+        transition: all 0.8s ease;
+        transform-style: preserve-3d;
+
+        &-dark {
+            transition: all 0.8s ease;
+            background: #253342 radial-gradient(circle at 0 215px, rgba(50, 77, 103, 0.7) 30%, rgba(50, 77, 103, 0.45) 30%, rgba(50, 77, 103, 0.45) 45%, rgba(50, 77, 103, 0.3) 45%, rgba(50, 77, 103, 0.3) 60%, rgba(0, 0, 0, 0) 60%);
+        }
+
+        &--front {
+            padding: 1.375rem 1.25rem 1rem 1.313rem;
+            height: 100%;
+            width: 100%;
+            backface-visibility: hidden;
+            position: absolute;
+
+            &-card-information-container {
+                height: 100%;
+            }
+
+            &-information {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                &--l-margin {
+                    margin-bottom: 1.5rem;
+                }
+
+                &--md-margin {
+                    margin-bottom: 0.438rem;
+                }
+
+                &--title {
+                    color: $bluey-grey;
+                }
+
+                &--text {
+                    color: $lines;
+                    min-height: 1.125rem;
+                }
+
+            }
+
+            &-icons {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+
+                &--bank-icon {
+                    object-fit: contain;
+                }
+
+                &--card-type-icon {
+                    object-fit: contain;
+                }
+            }
+        }
+
+        &--back {
+            height: 100%;
+            width: 100%;
+            backface-visibility: hidden;
+            position: absolute;
+            transform: rotateY(180deg);
+            padding-top: 1.438rem;
+
+            &-dark-rectangle {
+                width: 100%;
+                height: 2.5rem;
+                background-color: $black;
+                margin-bottom: 1rem;
+            }
+
+            &-white-rectangle {
+                width: 100%;
+                height: 2.5rem;
+                background-color: $white;
+            }
+
+            &-cvv-label {
+                color: $bluey-grey;
+                line-height: 3 !important;
+            }
+
+            &-cvv-value {
+                color: $white;
+                line-height: 0 !important;
+            }
+        }
+    }
+}
+
+.hover-on .m-credit-card__content {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
