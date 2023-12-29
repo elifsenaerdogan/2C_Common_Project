@@ -1,0 +1,10 @@
+@import '@others/assets/styles/variables.scss';
+
+.TrkclAppConsumerComplaintsWrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:3rem;
+  width: 80%;
+}
+
+

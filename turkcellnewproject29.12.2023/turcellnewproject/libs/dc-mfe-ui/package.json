@@ -1,0 +1,19 @@
+{
+  "name": "dc-mfe-ui",
+  "version": "1.0.0",
+  "description": "This library was generated with [Nx](https://nx.dev).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://stash.turkcell.com.tr/git/scm/sh200711/dc-mfe-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nx/storybook": "^16.8.1"
+  }
+}
