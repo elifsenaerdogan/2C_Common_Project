@@ -1,0 +1,77 @@
+@import '@others/assets/styles/variables.scss';
+
+.a-trkclApp-textarea {
+  position: relative;
+  resize: none !important;
+
+  &__info {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    z-index: 2;
+    cursor: pointer;
+
+    .a-icon {
+      color: $bluey-grey;
+    }
+  }
+
+  &__tooltip {
+    position: absolute;
+    background: $white;
+    box-shadow: 0 -8px 10px -5px rgba(0, 0, 0, 0.1),
+      0 -6px 30px 5px rgba(0, 0, 0, 0.1);
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: $dark;
+    min-width: 23.75rem;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    bottom: 2.5rem;
+    z-index: 99;
+    right: -1.25rem;
+    border-radius: 0.5rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid #fff;
+      bottom: -8px;
+      right: 25px;
+    }
+  }
+  &__disabled {
+    border: 1px solid $lines;
+    pointer-events: none;
+    opacity: 0.4;
+  }
+  &__isSuccess {
+    border: 1px solid $success !important;
+  }
+  &__isError {
+    border: 1px solid $error;
+    color: $error;
+    &:focus {
+      border: 1px solid $error;
+    }
+
+    &:hover {
+      border: 1px solid $error;
+    }
+  }
+
+  &__errorMessage {
+    color: $error;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .a-textarea {
+    &__tooltip {
+      min-width: 19.375rem;
+    }
+  }
+}

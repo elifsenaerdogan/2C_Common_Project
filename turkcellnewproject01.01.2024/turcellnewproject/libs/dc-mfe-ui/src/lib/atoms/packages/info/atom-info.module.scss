@@ -1,0 +1,59 @@
+@import '@others/assets//styles/variables.scss';
+
+.a-trcklAppInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.625rem;
+  padding: 1.25rem 0 1.25rem 2.5rem;
+  background-color: $primary-200;
+  height: 4.5rem !important;
+  position: relative !important;
+
+  &__infoTitle {
+    color: $white;
+    margin-bottom: 0.5rem;
+  }
+  &__infoText {
+    color: $white;
+    width: 22.063rem;
+  }
+  &__infoImage {
+    position: absolute;
+    top: -18.75rem;
+    right: -18.875rem;
+  }
+
+  &__phoneIcon {
+    position: absolute;
+    right: 7.5rem;
+    top: 2rem;
+    z-index: 999;
+  }
+  &__phoneImage {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+.a-trcklAppInfoMobile {
+  display: flex;
+  padding: 2.063rem 1rem 2.306rem 1rem;
+  position: relative;
+  background-image: url('../../../../others/assets/images/group.png') !important;
+  background-size: cover;
+  object-fit: contain;
+
+  &__mobileIcon {
+    display: flex;
+    align-items: center;
+    margin-right: 0.75rem;
+  }
+  &__mobileInfoTitle {
+    color: $white;
+    margin-bottom: 1.631rem;
+  }
+  &__mobileInfoText {
+    color: $white;
+  }
+}

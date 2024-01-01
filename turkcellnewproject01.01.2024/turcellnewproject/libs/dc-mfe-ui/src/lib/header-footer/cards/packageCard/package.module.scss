@@ -1,0 +1,104 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkclAppPackageCardWrapper {
+  & .trkclAppPackageCardHeader {
+    height: 5.7375rem;
+    border-bottom-left-radius: 100% 1.5625rem;
+    border-bottom-right-radius: 100% 1.5625rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & .trkclAppPackageCardTitle {
+    color: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+
+  & .trkclAppPackageCardBody {
+    padding: 0 1.25rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & p {
+      margin-bottom: 0.2rem;
+    }
+
+    & .trkclAppPackageCardPackageName {
+      color: $slate-grey;
+    }
+
+    & .trkclAppProgressContent {
+      & p {
+        margin: 0.2rem;
+      }
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      & .trkclAppProgressInfo {
+        color: $bluey-grey;
+      }
+
+      & .trkclAppProgressRate {
+        color: $dark;
+      }
+    }
+
+    & .trkclAppPackageCardDesc {
+      margin-top: 0.5rem;
+      color: $slate-grey;
+    }
+  }
+
+  & .trkclAppPackageCardFooter {
+    padding: 1rem;
+
+    & .trkclAppPackageCardDate {
+      color: $slate-grey;
+      letter-spacing: 0.009rem;
+    }
+  }
+
+  & .trkclAppNoPackageCardWrapper {
+    padding: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 16.249rem;
+
+    & .trkclAppNoPackageCardTitle {
+      text-align: center;
+    }
+  }
+
+  // Variants
+
+  & .trkclAppPackageCard_MB {
+    background: linear-gradient(53deg, #20cbfc -10%, #007ce0 95%);
+  }
+
+  & .trkclAppPackageCard_DK {
+    background: linear-gradient(53deg, #fe9400 -10%, #ff5e3a 95%);
+  }
+
+  & .trkclAppPackageCard_SMS {
+    background: linear-gradient(53deg, #007ce0 -10%, #050cc6 95%);
+  }
+
+  & .trkclAppPackageCard_APP {
+    background: linear-gradient(53deg, #eb5685 -10%, #7e30ea 95%);
+  }
+}
