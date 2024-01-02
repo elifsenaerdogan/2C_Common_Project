@@ -1,0 +1,16 @@
+@import '@others/assets/styles/variables.scss';
+.trkcellAppMobileMenuHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $white;
+}
+.trkcelAppMobilMenuWrapperHeaderCloseIcon {
+  font-size: 24px;
+  font-weight: 500;
+  margin-right: 0.3rem;
+  &:hover {
+    cursor: pointer;
+    color: $secondary;
+  }
+}

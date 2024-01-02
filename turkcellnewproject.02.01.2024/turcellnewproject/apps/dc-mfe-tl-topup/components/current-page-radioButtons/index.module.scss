@@ -1,0 +1,23 @@
+@import '@others/assets/styles/variables.scss';
+
+.pageTypeRadioButtons {
+  &__radioGroup {
+    display: flex !important;
+    align-items: normal !important;
+    justify-content: none !important;
+    flex-wrap: nowrap !important;
+    flex-direction: row !important;
+
+    & :first-child {
+      margin-right: 1.25rem !important;
+      @media (max-width: 768px) {
+        // padding: 0.8rem 0.95rem;
+        margin-right: 1rem !important;
+      }
+    }
+  }
+
+  &__radio {
+    width: 9.75rem !important;
+  }
+}

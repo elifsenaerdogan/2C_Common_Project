@@ -1,0 +1,104 @@
+@import '@others/assets/styles/variables.scss';
+.a-trkclApp-checkbox {
+  padding: 0.375rem 0;
+
+  :global(.ant-checkbox) {
+    & span {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-color: $lines;
+    }
+
+    & + span {
+      padding-inline-start: 0.9375rem;
+      padding-inline-end: 0;
+      color: $slate-grey;
+      letter-spacing: normal;
+    }
+  }
+
+  :global(.ant-checkbox-checked) {
+    & div {
+      display: none;
+    }
+
+    & span {
+      background-color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &::after {
+        content: url('../../../others/assets/images/check.svg');
+        transform: none;
+        transition: none;
+        border: none !important;
+        position: unset;
+      }
+    }
+
+    & + span {
+      color: $dark;
+      font-weight: 700;
+    }
+  }
+
+  &:hover {
+    :global(.ant-checkbox) {
+      & span {
+        border-color: $lines !important ;
+      }
+    }
+
+    :global(.ant-checkbox-checked) {
+      & span {
+        background-color: $white !important;
+      }
+
+      & + span {
+        color: $dark;
+        font-weight: 700;
+      }
+    }
+  }
+  &--block {
+    label {
+      display: block;
+    }
+  }
+  &--registration {
+    display: flex;
+    align-items: center;
+
+    &-isChecked {
+      color: $dark;
+    }
+    &-isNotChecked {
+      color: $slate-grey;
+    }
+    &-terms {
+      color: $primary-100;
+      margin: 0 0.5rem;
+    }
+    &-image {
+      margin: 0 0.5rem;
+    }
+  }
+}
+.a-trkclApp-label {
+  display: flex;
+  align-items: center;
+  @media (max-width: 768px) {
+    align-self: flex-start !important;
+  }
+  & span {
+    cursor: pointer;
+  }
+}
+.checkboxGroup {
+  :global(.ant-checkbox-wrapper) {
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+  }
+}

@@ -1,0 +1,87 @@
+@import '../../../../../../others/assets/styles/variables.scss';
+
+.m-trkclApp-packageCardMobile {
+  width: 100%;
+  height: 100%;
+  border: none !important;
+  border-radius: 0.625rem;
+  cursor: pointer;
+
+  &__mobileContent {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--title {
+      display: flex;
+      color: $black;
+      padding: 1rem 1rem 0 1rem;
+      justify-content: space-between;
+
+      & > span {
+        margin-right: 0.2rem;
+        max-width: 5.25rem;
+      }
+
+      &-images {
+        margin-left: 0.2rem;
+      }
+    }
+
+    &--desc {
+      padding: 0 1rem;
+      text-align: right;
+      & > span {
+        color: $dark;
+        font-weight: bold;
+      }
+      &-type {
+        color: $grey-secondary;
+        font-weight: normal;
+      }
+    }
+
+    &--footer {
+      border-top: 0.0625rem solid $shade;
+      padding: 0.25rem 0.975rem 0.625rem 0.975rem;
+      margin-top: 0.625rem;
+
+      & > span {
+        color: $slate-grey;
+      }
+
+      &-count {
+        vertical-align: super;
+      }
+    }
+  }
+  &__headBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.5rem;
+    width: 100%;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+  }
+  &__primaryGradiant {
+    background-color: $alternative-200;
+  }
+  &__secondaryGradiant {
+    background-color: $secondary;
+  }
+  &__darkGradiant {
+    background-color: $dark;
+  }
+  &__alternativeGradiant {
+    background-color: $primary-dark;
+  }
+
+  :global(.ant-card-body) {
+    padding: 0 !important;
+    height: 100% !important;
+  }
+}

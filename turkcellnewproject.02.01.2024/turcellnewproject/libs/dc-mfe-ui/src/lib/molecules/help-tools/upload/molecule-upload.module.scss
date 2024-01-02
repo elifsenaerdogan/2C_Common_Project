@@ -1,0 +1,29 @@
+@import '@others/assets/styles/variables.scss';
+
+.a-trkclAppUploadWrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap:1.5rem;
+
+}
+
+.a-trkclAppUploadInput{
+  height: 4rem;
+}
+
+.a-trkclAppUploadButton{
+  height: 3rem!important;
+  width:200% !important;
+}
+
+.a-trkclAppUploadInputChoose{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.a-trkclAppUploadInputStatement{
+  width: 137%;
+  height:4rem;
+}
+
+
