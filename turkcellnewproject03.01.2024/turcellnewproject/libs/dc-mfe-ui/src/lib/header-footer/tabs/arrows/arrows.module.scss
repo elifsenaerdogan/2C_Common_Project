@@ -1,0 +1,16 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkclAppSliderArrow {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  color: $white !important;
+  background: $white-40 !important;
+  border-radius: 100%;
+
+  .trkcllAppRightArrow {
+    transform: rotate(180deg);
+  }
+}

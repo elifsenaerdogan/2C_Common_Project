@@ -1,0 +1,13 @@
+.trkcllAppWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  strong {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  .trkcllAppSocialMediaIcon {
+    font-size: 24px;
+  }
+}

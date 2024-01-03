@@ -1,0 +1,128 @@
+@import '@others/assets/styles/variables.scss';
+
+.a-trkclAppBtn {
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+
+  &:global(.ant-btn) {
+    height: auto;
+    border-radius: none;
+    box-shadow: none !important;
+    transition: none;
+    border-radius: 5rem;
+  }
+
+  & :global(.ant-wave) {
+    display: none !important;
+    box-shadow: none !important;
+
+    & :global(wave-motion-appear),
+    & :global(wave-motion-appear-active) {
+      display: none;
+    }
+  }
+
+  &__context {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    @media (max-width: 768px) {
+      &__arrowSpan {
+        text-align: end;
+      }
+      &__textSpan {
+        text-align: initial;
+      }
+      &__closeBtn {
+        display: none !important;
+      }
+    }
+  }
+
+  &--default {
+    border-radius: 5px;
+    color: $dark !important;
+    border: 1px solid $dark !important;
+    background-color: $white !important;
+
+    &:hover {
+      background-color: $shade !important;
+      border-color: $dark !important;
+    }
+  }
+
+  &--primary {
+    color: $white !important;
+    border: 1px solid $primary-100 !important;
+    background-color: $primary-100 !important;
+
+    &:hover {
+      background-color: $primary-400 !important;
+      border-color: $primary-400 !important;
+      color: $white !important;
+    }
+  }
+
+  &--primary-outlined {
+    color: $primary-100 !important;
+    border: 1px solid $primary-100 !important;
+    background-color: $white !important;
+
+    &:hover {
+      background-color: $primary-400 !important;
+      border-color: $primary-400 !important;
+      color: $white !important;
+    }
+  }
+
+  &--secondary {
+    color: $dark !important;
+    background-color: $secondary !important;
+    border-color: $secondary !important;
+
+    &:hover {
+      background-color: $secondary-300 !important;
+      border-color: $secondary-300 !important;
+    }
+  }
+  &--secondary-outlined {
+    border-radius: 5rem;
+    border: 1px solid $secondary !important;
+    color: $secondary !important;
+    background-color: $white !important;
+    &:hover {
+      background-color: $secondary-300 !important;
+      border-color: $secondary-300 !important;
+      color: $dark !important;
+    }
+  }
+
+  &--link {
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    color: #2855ac !important;
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &--disabled {
+    background-color: $lines !important;
+    color: $bluey-grey !important;
+    border-color: $lines !important;
+
+    &:hover {
+      cursor: not-allowed;
+      border: none;
+      color: $bluey-grey !important;
+      border-color: $bluey-grey !important;
+    }
+  }
+}

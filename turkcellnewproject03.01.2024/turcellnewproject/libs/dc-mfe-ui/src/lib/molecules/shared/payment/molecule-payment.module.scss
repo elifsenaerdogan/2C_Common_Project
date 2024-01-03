@@ -1,0 +1,56 @@
+@import '@others/assets/styles/variables.scss';
+
+.m-trkclAppPayment {
+    width: 100%;
+    padding-top: 1.25rem;
+
+    &__Row {
+        margin-bottom: .5rem;
+    }
+
+    &__Popover--Content {
+        max-width: 12.125rem;
+    }
+
+    &__BottomColumns {
+        margin-top: 1.25rem;
+    }
+
+    &__Aggrement {
+        color: $slate-grey;
+
+        &--Link {
+            color: $primary-100 !important;
+            cursor: pointer;
+        }
+
+        &-Modal {
+            :global(.ant-modal-content) {
+                max-width: 30.5rem;
+                height: 28.125rem;
+                padding: 3.563rem 0.938rem 2.188rem 1.313rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            :global(.ant-modal-body) {
+                height: 13.125rem;
+                overflow: auto;
+                border: 1px solid $lines;
+                border-radius: 0.625rem;
+            }
+
+            &-Footer {
+
+                &--Button {
+                    padding: 0.375rem 1.125rem 0.625rem;
+                    width: 20.5rem;
+                    height: 2.5rem !important;
+                }
+            }
+
+        }
+    }
+}

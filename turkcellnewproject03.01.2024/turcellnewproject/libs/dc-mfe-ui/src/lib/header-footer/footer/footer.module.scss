@@ -1,0 +1,14 @@
+@import '@others/assets/styles/variables.scss';
+
+.trkcllAppFooter {
+  background-color: $footer-bgr;
+  width: 100%;
+  color: $white;
+  overflow: hidden;
+
+  .trkcllAppHideElement {
+    position: absolute;
+    top: -9999999999px;
+    left: -9999999999px;
+  }
+}
